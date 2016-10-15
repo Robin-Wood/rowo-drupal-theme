@@ -22,5 +22,8 @@
     </div>
 
     <?php //print $scripts ?>
+    <script src="/sites/all/themes/tweme/dist/scripts/main.js"
+            async
+            defer></script>
   </body>
 </html>
