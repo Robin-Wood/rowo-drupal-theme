@@ -1,0 +1,10 @@
+.content-slider {
+  &__title {
+    display: block;
+    text-align: center;
+  }
+
+  &__canvas {
+    background-color: $color-concrete;
+  }
+}

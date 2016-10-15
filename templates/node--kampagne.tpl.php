@@ -79,88 +79,95 @@
  * @ingroup templates
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
-  <header>
-    <?php print render($title_prefix); ?>
-    <?php if (!$page && !empty($title)): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-    <?php if ($display_submitted): ?>
-    <span class="submitted">
-      <?php print $user_picture; ?>
-      <?php print $submitted; ?>
-    </span>
-    <?php endif; ?>
-  </header>
-  <?php endif; ?>
-  <?php
-    // Hide comments, tags, and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_tags']);
-  ?>
 
-  <?php
+<?php
+  // Hide comments, tags, and links now so that we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+  hide($content['field_tags']);
+?>
 
+<?php //print render($tabs);?>
 
-  /**
-   *Hier dann die Ausgabe für den Inhaltstyp Kampagne
-   */
-  ?>
-
-  <?php print render($tabs);?>
-
-adasd
-
+<article class="article">
   <?php if (!empty($content['field_bild'])): ?>
-    <div class="content-teaser-image">
+    <figure class="article__teaser-image-container">
       <?php print render($content['field_bild']); ?>
-      <div class="content-teaser-title"><h1><?php print $title; ?></h1></div>
-    </div>
-      <?php endif; ?>
-      <?php if (!empty($content['field_teaser_text'])): ?>
-        <div class="content-teaser-text">
+
+      <h1 class="article__teaser-image-title">
+        <?php print $title; ?>
+      </h1>
+    </figure>
+  <?php endif; ?>
+
+
+  <?php if (!empty($content['field_teaser_text'])): ?>
+    <div class="article__teaser-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           <?php print render($content['field_teaser_text']); ?>
         </div>
-          <?php endif; ?>
-          <?php if (!empty($content['field_forderungen'])): ?>
-            <div class="content-forderungen">
-              <h2>Robin Wood Forderungen</h2>
-              <?php print render($content['field_forderungen']); ?>
-            </div>
-              <?php endif; ?>
-
-              <?php if (!empty($content['field_foto_slider_bilder'])): ?>
-                <div class="content-slideshow-title"><h2>Letzte Aktionen</h2></div>
-                <div class="content-slideshow">
-                  <?php print render($content['field_slideshow_view']); ?>
-                </div>
-                  <?php endif; ?>
-
-                  <div class="content-title"><h2><?php print render($title);?></h2></div>
-                   <?php if (!empty($content['field_text'])): ?>
-                    <div class="content-text">
-                      <?php print render($content['field_text']); ?>
-                    </div>
-                      <?php endif; ?>
-
-                      <?php if (!empty($content['field_links'])): ?>
-                       <div class="content-links">
-                         <?php print render($content['field_links']); ?>
-                       </div>
-                         <?php endif; ?>
-
-
-
-
-
-  <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
-  <footer>
-    <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
-  </footer>
+      </div>
+    </div>
   <?php endif; ?>
-  <?php print render($content['comments']); ?>
+
+  <?php if (!empty($content['field_forderungen'])): ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="demands">
+          <h2 class="demands__title">Robin Wood Forderungen</h2>
+          <?php print render($content['field_forderungen']); ?>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if (!empty($content['field_foto_slider_bilder'])): ?>
+    <div class="content-slider">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <h2 class="content-slider__title">Letzte Aktionen</h2>
+        </div>
+      </div>
+
+      <div class="content-slider__canvas">
+        <?php print render($content['field_slideshow_view']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+      <h2 class="article__subheadline">
+        <?php print render($title);?>
+      </h2>
+
+      <div class="wysiwyg">
+        <?php if (!empty($content['field_text'])): ?>
+          <?php print render($content['field_text']); ?>
+        <?php endif; ?>
+      </div>
+
+      <?php if (!empty($content['field_links'])): ?>
+        <div class="article__related-link-container">
+          <?php print render($content['field_links']); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($content['field_tags'])): ?>
+        <footer class="article__tags-container">
+          <?php print render($content['field_tags']); ?>
+        </footer>
+      <?php endif; ?>
+
+      <?php if (!empty($content['links'])): ?>
+        <footer class="article__links-container">
+          <?php print render($content['links']); ?>
+        </footer>
+      <?php endif; ?>
+
+      <?php print render($content['comments']); ?>
+    </div>
+  </div>
 </article>

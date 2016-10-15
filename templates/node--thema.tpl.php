@@ -79,72 +79,56 @@
  * @ingroup templates
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
-  <header>
-    <?php print render($title_prefix); ?>
-    <?php if (!$page && !empty($title)): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-    <?php if ($display_submitted): ?>
-    <span class="submitted">
-      <?php print $user_picture; ?>
-      <?php print $submitted; ?>
-    </span>
-    <?php endif; ?>
-  </header>
-  <?php endif; ?>
-  <?php
-    // Hide comments, tags, and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_tags']);
-  ?>
 
-  <?php
+<?php
+  // Hide comments, tags, and links now so that we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+  hide($content['field_tags']);
+?>
 
+<?php //print render($tabs);?>
 
-  /**
-   *Hier dann die Ausgabe für den Inhaltstyp Kampagne
-   */
-  ?>
-
-  <?php print render($tabs);?>
-
+<article class="article">
   <?php if (!empty($content['field_bild'])): ?>
-    <div class="content-teaser-image">
+    <figure class="article__teaser-image-container">
       <?php print render($content['field_bild']); ?>
-    </div>
-      <?php endif; ?>
-      <?php if (!empty($content['field_teaser_text'])): ?>
-        <div class="content-teaser-text">
-          <div class="content-teaser-title white"><h1><?php print $title; ?></h1></div>
+    </figure>
+  <?php endif; ?>
+
+
+  <?php if (!empty($content['field_teaser_text'])): ?>
+    <div class="article__teaser-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <h1 class="article__teaser-title">
+            <?php print $title; ?>
+          </h1>
+
           <?php print render($content['field_teaser_text']); ?>
         </div>
-          <?php endif; ?>
-          <?php if (!empty($content['field_schwerpunkt'])): ?>
-            <div class="content-schwerpunkte-title"><h2>Schwerpunkte zum Thema</h2></div>
-            <div class="content-schwerpunkte">
-              <?php print render($content['field_schwerpunkte_view']); ?>
-            </div>
-              <?php endif; ?>
-               <?php if (!empty($content['field_text'])): ?>
-                <div class="content-schwerpunkte-text">
-                  <?php print render($content['field_text']); ?>
-                </div>
-                  <?php endif; ?>
-
-
-
-
-
-
-  <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
-  <footer>
-    <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
-  </footer>
+      </div>
+    </div>
   <?php endif; ?>
-  <?php print render($content['comments']); ?>
+
+  <?php if (!empty($content['field_schwerpunkt'])): ?>
+    <div class="focus-list">
+      <h2 class="focus-list__title">Schwerpunkte zum Thema</h2>
+      <div class="focus-list__items-container">
+        <?php print render($content['field_schwerpunkte_view']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="wysiwyg">
+        <?php if (!empty($content['field_text'])): ?>
+          <?php print render($content['field_text']); ?>
+        <?php endif; ?>
+      </div>
+
+      <?php print render($content['comments']); ?>
+    </div>
+  </div>
 </article>

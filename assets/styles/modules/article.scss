@@ -1,0 +1,36 @@
+.article {
+  &__teaser-image-container {
+    position: relative;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__teaser-image-title {
+    font-size: 4rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__teaser-container {
+    background-color: $color-thunder;
+    color: white;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  &__teaser-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subheadline {
+    display: block;
+    text-align: center;
+  }
+}
