@@ -24,9 +24,21 @@
 
   // todo
   &__image-container {
+    position: relative;
+
     img {
       height: auto;
       max-width: 100%;
+    }
+
+    &:after {
+      @include triangle(top, white, .8rem);
+
+      bottom: 0;
+      content: ' ';
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
     }
   }
 }
