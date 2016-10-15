@@ -22,10 +22,22 @@
     }
   }
 
-  &__image {
+  &__image-container {
+    position: relative;
+
     img {
       height: auto;
       max-width: 100%;
+    }
+
+    &:after {
+      @include triangle(top, $color-thunder, 1.5rem);
+
+      bottom: 0;
+      content: ' ';
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
     }
   }
 

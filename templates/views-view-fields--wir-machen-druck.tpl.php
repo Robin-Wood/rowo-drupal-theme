@@ -1,6 +1,6 @@
 <article class="campaign">
   <header class="campaign__header">
-    <div class="campaign__image">
+    <div class="campaign__image-container">
       <?php print $fields["field_bild"]->content;?>
     </div>
 
