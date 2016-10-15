@@ -11,5 +11,6 @@
 
   <div class="campaign__teaser-container">
     <?php print $fields["field_teaser_text"]->content;?>
+    <span class="more">...</span>
   </div>
 </article>

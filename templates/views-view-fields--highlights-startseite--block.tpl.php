@@ -11,6 +11,7 @@
 
   <div class="teaser__text-container">
     <?php print $fields["field_teaser_text"]->content;?>
+    <span class="more">...</span>
   </div>
 
   <?php //print $fields["field_link"]; ?>
