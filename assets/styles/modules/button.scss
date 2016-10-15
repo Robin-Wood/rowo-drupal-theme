@@ -1,0 +1,22 @@
+.button {
+  &--window {
+    border: 1px solid currentColor;
+    border-radius: .5rem;
+    color: currentColor;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: $color-thunder;
+      border-color: $color-thunder;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  & + & {
+    margin-left: 1.5rem;
+  }
+}

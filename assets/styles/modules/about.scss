@@ -1,0 +1,20 @@
+.about {
+  background-color: $color-thunder;
+  color: white;
+
+  &__content-container {
+    position: relative;
+  }
+
+  &__title {
+    font-size: 3.8rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+      color: currentColor;
+    }
+  }
+}

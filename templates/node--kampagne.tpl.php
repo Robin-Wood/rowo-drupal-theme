@@ -112,6 +112,8 @@
 
   <?php print render($tabs);?>
 
+adasd
+
   <?php if (!empty($content['field_bild'])): ?>
     <div class="content-teaser-image">
       <?php print render($content['field_bild']); ?>

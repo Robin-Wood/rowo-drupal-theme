@@ -1,0 +1,31 @@
+.navigation-meta {
+  @include clearfix();
+  margin-bottom: 1rem;
+
+  > ul {
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+
+    > li {
+      display: inline-block;
+    }
+
+    > li + li {
+      margin-left: 1.5rem;
+    }
+  }
+
+  a {
+    color: currentColor;
+    font-size: .95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: currentColor;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.footer {
+  background-color: $color-atlantis;
+  margin-bottom: 5rem;
+  text-align: center;
+
+  &__logo-bar {
+    background-color: $color-thunder;
+    color: white;
+    padding-bottom: .3rem;
+    padding-top: .3rem;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 3rem;
+    width: 12rem;
+  }
+
+  &__address {
+    display: inline-block;
+    font-style: normal;
+    max-width: 30rem;
+    text-align: center;
+
+    &-title {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: .5rem;
+    }
+
+    &-block {
+      display: block;
+    }
+  }
+
+  &__block {
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &:last-child {
+      padding-bottom: 3.5rem;
+    }
+  }
+}

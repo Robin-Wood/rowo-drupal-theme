@@ -1,0 +1,86 @@
+.navigation-main {
+  display: flex;
+
+  @include small {
+    background-color: $color-concrete;
+  }
+
+  > * {
+    display: flex;
+  }
+
+  &__toggle {
+    font-size: .9rem;
+    text-transform: uppercase;
+
+    &-icon {
+      display: block;
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+
+  &__logo-container {
+    align-items: center;
+    background-color: $color-thunder;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+
+    > a {
+      &,
+      &:focus,
+      &:hover {
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__logo {
+    height: 3rem;
+    width: 12rem;
+  }
+
+  &__navigation-container {
+    > ul {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 0;
+    }
+
+    a {
+      color: currentColor;
+      font-weight: bold;
+      padding: 1rem 1.5rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus {
+        color: $color-atlantis;
+        text-decoration: none;
+      }
+    }
+
+    // active page
+    .active-trail a {
+      color: $color-atlantis;
+      text-decoration: none;
+    }
+  }
+
+  &__social-media-container {
+    align-self: flex-end;
+    margin-left: auto;
+    padding: 1rem;
+  }
+}

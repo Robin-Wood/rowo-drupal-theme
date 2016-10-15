@@ -1,0 +1,26 @@
+.social-media {
+  border: 1px solid $color-thunder;
+  border-radius: 100%;
+  color: currentColor;
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 1;
+  padding: .7rem;
+  text-align: center;
+  width: 3.2rem;
+
+  &:hover,
+  &:focus {
+    background-color: $color-thunder;
+    color: white;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  & + & {
+    margin-left: 1.5rem;
+  }
+}

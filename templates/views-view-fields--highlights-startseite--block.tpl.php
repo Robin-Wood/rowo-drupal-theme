@@ -1,5 +1,17 @@
+<div class="teaser">
+  <div class="teaser__image-container">
+    <?php print $fields["field_bild"]->content;?>
+  </div>
 
-<div class="highlight-item-image"><?php print $fields["field_bild"]->content;?></div>
-<div class="highlight-item-title"><h2><?php print $fields["title"]->content;?></h2></div>
-<div class="highlight-item-teaser"><?php print $fields["field_teaser_text"]->content;?></div>
-<div class="highlight-item-link"><?php print $fields["field_link"]->content;?></div>
+  <h2 class="teaser__title">
+    <?php print $fields["title"]->content;?>
+    <span class="visually-hidden">:</span>
+    <span class="teaser__publication-date">21 April 2016</span>
+  </h2>
+
+  <div class="teaser__text-container">
+    <?php print $fields["field_teaser_text"]->content;?>
+  </div>
+
+  <?php //print $fields["field_link"]; ?>
+</div>

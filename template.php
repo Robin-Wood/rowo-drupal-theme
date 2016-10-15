@@ -107,16 +107,6 @@ function tweme_menu_link__menu_footer_sitemap($vars) {
 }
 
 /**
- * Overrides theme_system_powered_by().
- */
-function tweme_system_powered_by() {
-  return '© ' . date('Y') . ' <a href="' . base_path() . '">' . variable_get('site_name') . '</a>. ' .
-    theme_system_powered_by() .
-    (module_exists('atoms') ? ', <a href="http://drupal.tonystar.me/atoms">Atoms</a>' : '') .
-    ' ' . t('and') . ' <a href="http://drupal.tonystar.me/tweme">Tweme</a>.';
-}
-
-/**
  * Preprocesses variables for poll-bar.tpl.php.
  */
 function tweme_preprocess_poll_bar(&$vars) {
