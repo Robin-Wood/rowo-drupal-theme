@@ -1,10 +1,11 @@
 .header {
   background-color: $color-thunder;
   color: white;
+  padding: .3rem;
 
   @include small {
     background-color: transparent;
     color: currentColor;
-    padding-top: 1rem;
+    padding: 1rem 0 0 0;
   }
 }

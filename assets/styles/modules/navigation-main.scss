@@ -1,17 +1,21 @@
 .navigation-main {
-  display: flex;
-
   @include small {
     background-color: $color-concrete;
+    display: flex;
   }
 
   > * {
-    display: flex;
+    display: inline-block;
+
+    @include small {
+      display: flex;
+    }
   }
 
   &__toggle {
     font-size: .9rem;
     text-transform: uppercase;
+    vertical-align: middle;
 
     &-icon {
       display: block;
@@ -21,15 +25,18 @@
   }
 
   &__logo-container {
-    align-items: center;
     background-color: $color-thunder;
     color: white;
-    display: flex;
-    justify-content: center;
     margin-right: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
+    vertical-align: middle;
+
+    @include small {
+      align-items: center;
+      justify-content: center;
+    }
 
     > a {
       &,
@@ -48,21 +55,53 @@
   }
 
   &__navigation-container {
+    width: 100%;
+
     > ul {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+      border-top: 1px solid $color-bonjour;
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: 1.5rem;
       padding-left: 0;
+
+      @include small {
+        align-items: center;
+        border-top: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        width: auto;
+      }
+
+      > li {
+        display: block;
+        width: 100%;
+      }
+
+      > li + li {
+        border-top: 1px solid $color-bonjour;
+
+        @include small {
+          border-top: none;
+        }
+      }
     }
 
     a {
       color: currentColor;
+      display: table;
       font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
       padding: 1rem 1.5rem;
+      text-align: center;
       text-transform: uppercase;
       white-space: nowrap;
+
+      @include small {
+        display: block;
+        text-align: left;
+        width: auto;
+      }
 
       &:hover,
       &:focus {

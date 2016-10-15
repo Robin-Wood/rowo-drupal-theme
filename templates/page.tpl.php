@@ -10,7 +10,7 @@
   </nav>
 
   <nav class="navigation-main">
-    <button class="navigation-main__toggle visible-xs">
+    <button class="navigation-main__toggle visible-xs-inline-block">
       <svg class="icon navigation-main__toggle-icon"
            role="img">
         <use xlink:href="/sites/all/themes/tweme/dist/images/sprite.svg#bars">
@@ -38,13 +38,13 @@
       </a>
     </div>
 
-    <div class="navigation-main__navigation-container">
+    <div class="navigation-main__navigation-container hidden-xs">
       <?php print render($primary_nav) ?>
-      <?php print render($secondary_nav) ?>
-      <?php print render($page['navigation']) ?>
+      <?php //print render($secondary_nav) ?>
+      <?php //print render($page['navigation']) ?>
     </div>
 
-    <div class="navigation-main__social-media-container">
+    <div class="navigation-main__social-media-container hidden-xs">
       <a href="https://twitter.com/"
          class="social-media">
         <svg class="icon social-media__icon social-media__icon--twitter"
