@@ -5,6 +5,7 @@
   }
 
   &__canvas {
+    @include full-content-area();
     background-color: $color-concrete;
   }
 }

@@ -28,6 +28,15 @@
   }
 }
 
+@mixin full-content-area($top: false) {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  @if $top == true {
+    margin-top: -1.5rem;
+  }
+}
+
 @function opposite-direction($directions) {
   $opposite-directions: ();
   $direction-map: (

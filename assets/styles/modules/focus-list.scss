@@ -1,5 +1,8 @@
 .focus-list {
+  @include full-content-area();
+
   &__title {
+    color: white;
     display: block;
     background-color: grey;
     margin-bottom: 0;
@@ -7,11 +10,19 @@
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__items-container {
     background-color: $color-concrete;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  &__item {
+    &-title {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
   }
 }
