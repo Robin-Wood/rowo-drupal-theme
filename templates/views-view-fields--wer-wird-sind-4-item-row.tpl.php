@@ -4,18 +4,13 @@
   </div>
 
   <h2 class="teaser__title">
-    <?php print $fields["title"]->content; ?>
+    <?php print $fields["title"]->value; ?>
     <span class="visually-hidden">:</span>
     <span class="teaser__publication-date">21 April 2016</span>
   </h2>
 
   <div class="teaser__text-container">
-    <span class="teaser__category">
-      <?php print $fields["field_highlight_kategorie"]->content;?>
-    </span>
-
     <?php print $fields["field_teaser_text"]->content;?>
-
     <span class="more">...</span>
   </div>
 </article>
