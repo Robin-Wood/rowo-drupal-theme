@@ -13,6 +13,12 @@
 
   &__main {
     background-color: white;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+
+    @include small {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 }

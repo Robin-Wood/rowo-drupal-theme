@@ -1,0 +1,63 @@
+.teaser-highlight {
+  background-color: $color-thunder;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+
+  @include small {
+    margin-bottom: 1.5rem;
+  }
+
+  > .button {
+    align-self: flex-end;
+    margin-top: auto;
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      color: $color-thunder;
+    }
+  }
+
+  &__title {
+    @include type('m7');
+    color: currentColor;
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  &__image-container {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    margin-top: -2.5rem;
+  }
+
+  &__text {
+    @include type('m6');
+    margin-bottom: 2.5rem;
+    margin-top: -2.5rem;
+  }
+
+  &--is-green {
+    background-color: $color-atlantis;
+    color: $color-thunder;
+  }
+
+  &--is-grey {
+    background-color: $color-alto;
+    color: $color-thunder;
+  }
+
+  &--is-grey,
+  &--is-green {
+    > .button {
+      &:hover,
+      &:focus {
+        background-color: $color-thunder;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,20 +1,74 @@
 .about {
-  background-color: $color-thunder;
   color: white;
+  margin-bottom: 1.5rem;
+
+  // slick adds a display-block class ^^
+  &,
+  .slick-initialized &.slick-slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  > * {
+    display: flex;
+    width: 50%;
+  }
 
   &__content-container {
+    background-color: white;
+    color: $color-thunder;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
   }
 
   &__title {
-    font-size: 3.8rem;
+    @include type('m1');
+    background-color: $color-thunder;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    > a {
+      color: currentColor;
+    }
+  }
+
+  &__teaser {
+    padding: 1.5rem;
+  }
+
+  &--is-index &__title {
+    @include type('p1');
+    background-color: transparent;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
 
-    a {
-      color: currentColor;
-    }
+  &--is-index &__teaser {
+    display: none;
+  }
+
+  &--is-index &__content-container {
+    background-color: $color-thunder;
+  }
+
+  // todo: try to solve this in the template
+  #block-views-wer-wir-sind-block &__title,
+  #block-views-wer-wir-sind-block &--is-index &__content-container,
+  #block-views-wer-wir-sind-block-2 &__title,
+  #block-views-wer-wir-sind-block-2 &--is-index &__content-container,
+  #block-views-wer-wir-sind-block-4 &__title,
+  #block-views-wer-wir-sind-block-4 &--is-index &__content-container,
+  #block-views-wer-wir-sind-block-6 &__title,
+  #block-views-wer-wir-sind-block-6 &--is-index &__content-container {
+    background-color: $color-atlantis;
   }
 }

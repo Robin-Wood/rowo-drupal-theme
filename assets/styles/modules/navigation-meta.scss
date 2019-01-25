@@ -13,13 +13,13 @@
     }
 
     > li + li {
-      margin-left: 1.5rem;
+      margin-left: 2rem;
     }
   }
 
   a {
+    @include type('m3');
     color: currentColor;
-    font-size: .95rem;
     text-decoration: none;
     text-transform: uppercase;
 

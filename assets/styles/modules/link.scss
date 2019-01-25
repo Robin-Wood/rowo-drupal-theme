@@ -1,0 +1,31 @@
+.link {
+  color: $color-thunder;
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  &:hover &__title,
+  &:focus &__title {
+    text-decoration: underline;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 3.5rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+    width: 3.5rem;
+  }
+
+  &__title {
+    @include type('m12');
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: middle;
+  }
+}

@@ -10,8 +10,10 @@
   }
 
   &__teaser-image-title {
-    font-size: 4rem;
+    @include type('p2');
     left: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -19,6 +21,7 @@
 
   &__teaser-container {
     @include full-content-area();
+    @include type('m10');
     background-color: $color-thunder;
     color: white;
     padding-bottom: 2.5rem;
@@ -26,13 +29,19 @@
   }
 
   &__teaser-title {
+    @include type('m11');
     display: block;
     text-align: center;
     text-transform: uppercase;
   }
 
   &__subheadline {
+    @include type('t3');
     display: block;
     text-align: center;
+  }
+
+  &__text {
+    @include type('t2');
   }
 }

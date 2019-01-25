@@ -1,21 +1,35 @@
-<article class="teaser">
-  <div class="teaser__image-container">
-    <?php print $fields["field_bild"]->content;?>
-  </div>
+<?php
+$has_link = !empty($fields["field_link-url"]->content) && !empty($fields["field_link-title"]->content);
+?>
 
-  <h2 class="teaser__title">
-    <?php print $fields["title"]->content; ?>
-    <span class="visually-hidden">:</span>
-    <span class="teaser__publication-date">21 April 2016</span>
-  </h2>
+<div class="teaser-highlight__image-container">
+  <?php if ($has_link) : ?>
+    <a href="<?php print $fields["field_link-url"]->content; ?>"
+       rel="nofollow">
+  <?php endif; ?>
 
-  <div class="teaser__text-container">
-    <span class="teaser__category">
-      <?php print $fields["field_highlight_kategorie"]->content;?>
-    </span>
+     <?php print $fields["field_bild"]->content;?>
 
-    <?php print $fields["field_teaser_text"]->content;?>
+  <?php if ($has_link) : ?>
+   </a>
+  <?php endif; ?>
+</div>
 
-    <span class="more">...</span>
-  </div>
-</article>
+<h2 class="teaser-highlight__title">
+  <?php print $fields["title"]->content; ?>
+</h2>
+
+<p class="teaser-highlight__text">
+  <?php print $fields["field_teaser_text"]->content; ?>
+  <svg class="icon more"
+       role="img">
+    <use xlink:href="/sites/all/themes/tweme/dist/images/sprite.svg#more">
+  </svg>
+</p>
+
+<?php if (!empty($row->field_field_link)): ?>
+  <a href="<?php print $fields["field_link"]->content; ?>"
+     class="button button--window button--is-centered">
+    <?php print $fields["field_button_text"]->content; ?>
+  </a>
+<?php endif; ?>

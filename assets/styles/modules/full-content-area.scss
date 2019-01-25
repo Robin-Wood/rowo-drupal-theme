@@ -1,0 +1,7 @@
+.full-content-area {
+  @include full-content-area();
+
+  &--with-top {
+    @include full-content-area(true);
+  }
+}

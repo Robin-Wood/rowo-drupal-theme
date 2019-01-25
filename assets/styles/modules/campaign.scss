@@ -7,18 +7,37 @@
 
   &__header {
     position: relative;
+
+    > a {
+      display: block;
+
+      &,
+      &:hover,
+      &:focus {
+        color: currentColor;
+      }
+    }
   }
 
   &__title {
-    font-size: 2.8rem;
+    @include type('p1');
     left: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 
-    a {
-      color: currentColor;
+    > a {
+      &,
+      &:hover,
+      &:focus {
+        color: currentColor;
+      }
     }
   }
 
@@ -41,7 +60,10 @@
     }
   }
 
-  &__teaser-container {
-    padding: 2rem;
+  &__teaser {
+    @include type('m6');
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 3rem;
   }
 }

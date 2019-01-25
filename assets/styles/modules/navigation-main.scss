@@ -28,8 +28,8 @@
     background-color: $color-thunder;
     color: white;
     margin-right: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     vertical-align: middle;
 
@@ -50,8 +50,8 @@
   }
 
   &__logo {
-    height: 3rem;
-    width: 12rem;
+    height: 3.5rem;
+    width: 14rem;
   }
 
   &__navigation-container {
@@ -87,9 +87,9 @@
     }
 
     a {
+      @include type('m2');
       color: currentColor;
       display: table;
-      font-weight: bold;
       margin-left: auto;
       margin-right: auto;
       padding: 1rem 1.5rem;

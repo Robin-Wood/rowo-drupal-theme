@@ -1,7 +1,6 @@
 .teaser {
   &__title {
-    font-size: 2.6rem;
-    line-height: 1.2;
+    @include type('t1');
     margin-bottom: .5rem;
     margin-top: 0;
     text-align: center;
@@ -18,10 +17,18 @@
   }
 
   &__publication-date {
+    @include type('m3');
     color: $color-atlantis;
     display: block;
-    font-size: .9rem;
     margin-bottom: .5rem;
+    margin-top: 1.5rem;
+  }
+
+  &__category {
+    @include type('m8');
+    color: $color-atlantis;
+    margin-right: .5rem;
+    text-transform: uppercase;
   }
 
   // todo
@@ -43,5 +50,9 @@
       position: absolute;
       transform: translateX(-50%);
     }
+  }
+
+  &__text {
+    @include type('m6');
   }
 }

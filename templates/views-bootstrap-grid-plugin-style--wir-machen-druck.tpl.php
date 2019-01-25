@@ -1,36 +1,11 @@
-<?php
-/**
- * @file views-bootstrap-grid-plugin-style.tpl.php
- * Default simple view template to display Bootstrap Grids.
- *
- *
- * - $columns contains rows grouped by columns.
- * - $rows contains a nested array of rows. Each row contains an array of
- *   columns.
- * - $column_type contains a number (default Bootstrap grid system column type).
- *
- * @ingroup views_templates
- */
-?>
-
-<?php if ($options['alignment'] == 'horizontal'): ?>
+<div class="full-content-area full-content-area--with-top">
   <?php foreach ($items as $row): ?>
-    <div class="row">
+    <div class="row equal-height-children">
       <?php foreach ($row['content'] as $column): ?>
-        <div class="col-xs-12 col-sm-6 equal-height-children">
+        <div class="col-xs-12 col-sm-6">
           <?php print $column['content'] ?>
         </div>
       <?php endforeach ?>
     </div>
   <?php endforeach ?>
-<?php else: ?>
-  <div class="row">
-    <?php foreach ($items as $column): ?>
-      <div class="col-xs-12 col-sm-6 equal-height-children">
-        <?php foreach ($column['content'] as $row): ?>
-          <?php print $row['content'] ?>
-        <?php endforeach ?>
-      </div>
-    <?php endforeach ?>
-  </div>
-<?php endif ?>
+</div>

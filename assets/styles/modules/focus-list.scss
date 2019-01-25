@@ -2,6 +2,7 @@
   @include full-content-area();
 
   &__title {
+    @include type('m12');
     color: white;
     display: block;
     background-color: grey;
@@ -20,9 +21,18 @@
 
   &__item {
     &-title {
+      color: $color-thunder;
       margin-bottom: 0;
       margin-top: 0;
       text-transform: uppercase;
+
+      a {
+        color: currentColor;
+      }
+    }
+
+    &-teaser {
+      @include type('m6');
     }
   }
 }

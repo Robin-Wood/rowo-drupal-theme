@@ -41,6 +41,7 @@ gulp.task('styles', () => {
 
   let concatStram = gulp.src([
     'node_modules/sanitize.css/sanitize.css',
+    'node_modules/slick-carousel/slick/slick.css',
     'assets/vendor/bootstrap/css/bootstrap.css',
   ]);
 

@@ -28,12 +28,16 @@
   }
 }
 
-@mixin full-content-area($top: false) {
+@mixin full-content-area($top: false, $bottom: false) {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 
   @if $top == true {
     margin-top: -1.5rem;
+  }
+
+  @if $bottom == true {
+    margin-bottom: -1.5rem;
   }
 }
 
@@ -62,6 +66,15 @@
   @return $opposite-directions;
 }
 
+@function rem($size, $base-size: 16px) {
+  $remSize: $size / $base-size;
+  @return #{$remSize}rem;
+}
+
+@mixin font-size($size) {
+  font-size: rem($size);
+}
+
 @mixin triangle($direction, $color: currentcolor, $size: 1em) {
   @if not index(top right bottom left, $direction) {
     @error "Direction must be either `top`, `right`, `bottom` or `left`.";
@@ -79,5 +92,146 @@
   } @else if $direction == right or $direction == left {
     border-bottom: $perpendicular-borders;
     border-top:    $perpendicular-borders;
+  }
+}
+
+@mixin type($id) {
+  /*
+
+    Conventions:
+    - Plakkaat: p1, p2, p3, ...
+    - Tisa: t1, t2, ...
+    - Mark: m1, m2, m3, ...
+
+  */
+
+  @if $id == 'p1' {
+    @include font-size(56px);
+    font-family: $font-plakkaat;
+    font-weight: $font-weight-plakkaat;
+    line-height: 1;
+
+    @include small {
+      @include font-size(80px);
+    }
+  }
+
+  @if $id == 'p2' {
+    @include font-size(96px);
+    font-family: $font-plakkaat;
+    font-weight: $font-weight-plakkaat;
+    line-height: 1.2;
+  }
+
+  @if $id == 't1' {
+    @include font-size(32px);
+    font-family: $font-tisa;
+    font-weight: $font-weight-tisa-bold;
+    line-height: 1;
+
+    @include small {
+      @include font-size(40px);
+    }
+  }
+
+  @if $id == 't2' {
+    @include font-size(28px);
+    font-family: $font-tisa;
+    font-weight: $font-weight-tisa-medium;
+    line-height: 1.45;
+  }
+
+  @if $id == 't3' {
+    @include font-size(48px);
+    font-family: $font-tisa;
+    font-weight: $font-weight-tisa-bold;
+    line-height: 1.2;
+  }
+
+  @if $id == 'm1' {
+    @include font-size(26px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1;
+  }
+
+  @if $id == 'm2' {
+    @include font-size(22px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1;
+  }
+
+  @if $id == 'm3' {
+    @include font-size(18px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1;
+  }
+
+  @if $id == 'm4' {
+    @include font-size(20px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-medium;
+    line-height: 1;
+  }
+
+  @if $id == 'm5' {
+    @include font-size(23px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-medium;
+    line-height: 1.35;
+  }
+
+  @if $id == 'm6' {
+    @include font-size(20px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-medium;
+    line-height: 1.35;
+  }
+
+  @if $id == 'm7' {
+    @include font-size(24px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-black;
+    line-height: 1.2;
+
+    @include small {
+      @include font-size(33px);
+    }
+  }
+
+  @if $id == 'm8' {
+    @include font-size(16px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-black;
+  }
+
+  @if $id == 'm9' {
+    @include font-size(34px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1;
+  }
+
+  @if $id == 'm10' {
+    @include font-size(27px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-medium;
+    line-height: 1.35;
+  }
+
+  @if $id == 'm11' {
+    @include font-size(54px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1.2;
+  }
+
+  @if $id == 'm12' {
+    @include font-size(32px);
+    font-family: $font-mark;
+    font-weight: $font-weight-mark-bold;
+    line-height: 1.2;
   }
 }

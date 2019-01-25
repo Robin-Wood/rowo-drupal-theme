@@ -1,0 +1,52 @@
+.topic {
+  // this is already done by the content padding
+  @include small {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    @include type('m9');
+    color: $color-atlantis;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    > a {
+      &,
+      &:hover,
+      &:focus {
+        color: currentColor;
+      }
+    }
+  }
+
+  &__image-container {
+    position: relative;
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+
+    &:after {
+      @include triangle(top, white, 1.5rem);
+
+      bottom: 0;
+      content: ' ';
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__content-container {
+    padding: 2rem;
+  }
+
+  &__teaser {
+    @include type('m6');
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

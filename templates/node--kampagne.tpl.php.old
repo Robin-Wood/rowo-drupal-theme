@@ -1,0 +1,96 @@
+<?php
+  // Hide comments, tags, and links now so that we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+  hide($content['field_tags']);
+?>
+
+<article class="article">
+  <?php if (!empty($content['field_bild'])): ?>
+    <figure class="article__teaser-image-container">
+      <?php print render($content['field_bild']); ?>
+
+      <h1 class="article__teaser-image-title">
+        <?php print $title; ?>
+      </h1>
+    </figure>
+  <?php endif; ?>
+
+
+  <?php if (!empty($content['field_teaser_text'])): ?>
+    <div class="article__teaser-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <?php print render($content['field_teaser_text']); ?>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if (!empty($content['field_foderungen'])): ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h2 class="article__subheadline">
+          <?php print $content['field_foderungen']['#title'] ?>
+        </h2>
+
+        <?php print render($content['field_foderungen']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if (!empty($content['field_foto_slider_bilder'])): ?>
+    <?php print render($content['field_slideshow_view']); ?>
+  <?php endif; ?>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="article__text">
+        <?php if (!empty($content['field_text'])): ?>
+          <?php print render($content['field_text']); ?>
+        <?php endif; ?>
+
+        <?php if (!empty($content['field_einzelfoto'])): ?>
+          <figure class="figure">
+            <?php print render($content['field_einzelfoto']); ?>
+          </figure>
+        <?php endif; ?>
+
+        <?php if (!empty($content['field_youtube_video'])): ?>
+          <div class="video">
+            <?php print render($content['field_youtube_video']); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+
+      <?php if (!empty($content['field_tags'])): ?>
+        <footer class="article__tags-container">
+          <?php print render($content['field_tags']); ?>
+        </footer>
+      <?php endif; ?>
+
+      <?php if (!empty($content['field_links_multi'])): ?>
+        <div class="article__links-container">
+          <?php print render($content['field_links_multi']); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($content['field_datei_upload'])): ?>
+        <footer class="article__meta-container">
+          <?php print render($content['field_datei_upload']); ?>
+        </footer>
+      <?php endif; ?>
+
+      <div class="share hidden-print">
+        <?php $block = module_invoke('block', 'block_view', '2');?>
+        <?php print render($block['content']); ?>
+      </div>
+
+    </div>
+  </div>
+</article>
+
+<div class="back hidden-print">
+  <a href="/wir-machen-druck"
+     class="back__title">◂ Zu "Wir machen Druck"</a>
+</div>

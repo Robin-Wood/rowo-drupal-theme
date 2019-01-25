@@ -1,0 +1,15 @@
+.outer-link {
+  display: block;
+
+  &,
+  &:hover,
+  &:focus {
+    color: currentColor;
+    text-decoration: none;
+  }
+
+  &:hover &__title,
+  &:focus &__title {
+    text-decoration: underline;
+  }
+}

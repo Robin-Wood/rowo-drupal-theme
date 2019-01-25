@@ -1,19 +1,22 @@
 .footer {
   background-color: $color-atlantis;
-  margin-bottom: 5rem;
   text-align: center;
+
+  @include small {
+    margin-bottom: 5rem;
+  }
 
   &__logo-bar {
     background-color: $color-thunder;
     color: white;
-    padding-bottom: .3rem;
-    padding-top: .3rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
     text-align: center;
   }
 
   &__logo {
-    height: 3rem;
-    width: 12rem;
+    height: 4rem;
+    width: 15rem;
   }
 
   &__address {
@@ -40,6 +43,10 @@
 
     &:last-child {
       padding-bottom: 3.5rem;
+    }
+
+    > .button + .button {
+      margin-left: 1rem;
     }
   }
 }

@@ -1,0 +1,105 @@
+.teaser-slider {
+  margin-bottom: 1.5rem;
+
+  &__item {
+    flex-direction: column;
+
+    @include small {
+      flex-direction: row;
+    }
+
+    > * {
+      @include small {
+        width: 50%;
+      }
+    }
+  }
+
+  &__item-image-container {
+    padding-right: 0 !important;
+    position: relative;
+
+    &:before {
+      @include triangle(top, $color-atlantis, 1.5rem);
+      bottom: 0;
+      content: ' ';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include small {
+        @include triangle(left, $color-atlantis, 1.5rem);
+        bottom: auto;
+        left: auto;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      };
+    }
+  }
+
+  &__item-content-container {
+    background-color: $color-atlantis;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3.5rem;
+  }
+
+  &__item-category {
+    @include type('m1');
+    display: block;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+  }
+
+  &__item-title {
+    @include type('p1');
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+
+    > a {
+      color: currentColor;
+
+      &:hover,
+      &:focus {
+        color: currentColor;
+      }
+    }
+  }
+
+  &__item-text {
+    @include type('m5');
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  // slick styles
+  .slick-arrow {
+    background-color: white;
+    height: 4.2rem;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+
+    > svg {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .slick-prev {
+    left: -4rem;
+    padding-left: .2rem;
+  }
+
+  .slick-next {
+    padding-right: .2rem;
+    right: -4rem;
+  }
+}
