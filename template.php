@@ -3,12 +3,12 @@
 function tweme_css_alter(&$css) {
   // reference https://friendlymachine.net/posts/how-remove-core-and-module-css-drupal-7-theme
 
-  //dsm($css);
+  //dpm($css);
 
   $exclude = array(
     'modules/system/system.menus.css' => FALSE,
     '//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css' => FALSE,
-    '//cdn.jsdelivr.net/npm/bootstrap@3.4.0/dist/css/bootstrap.css' => FALSE,
+    'https://cdn.jsdelivr.net/npm/bootstrap@3.4.0/dist/css/bootstrap.css' => FALSE,
     'sites/all/themes/bootstrap/css/3.3.5/overrides.min.css' => FALSE,
     'sites/all/themes/bootstrap/css/3.4.0/overrides.min.css' => FALSE,
     'misc/ui/jquery.ui.core.css' => FALSE,
