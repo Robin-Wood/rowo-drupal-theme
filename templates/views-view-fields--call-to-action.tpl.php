@@ -4,7 +4,7 @@
       <div class="teaser-slider__item-image-container">
         <?php print $fields["field_bild"]->content; ?>
       </div>
-      <div class="teaser-slider__item-content-container teaser-slider__item-content-container--<?php print($modifier); ?>">
+      <div class="teaser-slider__item-content-container">
         <h2 class="teaser-slider__item-title">
           <?php print $fields["title"]->content; ?>
         </h2>
