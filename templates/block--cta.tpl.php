@@ -2,8 +2,8 @@
   <a class="outer-link" href="https://www.robinwood.de">
     <div class="teaser-slider__item equal-height-children">
       <div class="teaser-slider__item-image-container">
+        <?php print render($content['field_bild']); ?>
       </div>
-      <?php print $content ?>
     </div>
   </a>
 </section>
