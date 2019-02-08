@@ -1,11 +1,11 @@
 <article class="cta">
   <a class="outer-link" href="https://www.robinwood.de">
-    <div class="teaser-slider__item equal-height-children">
+    <!--<div class="teaser-slider__item equal-height-children">
       <div class="teaser-slider__item-image-container">
         <?php print $fields["field_bild"]->content; ?>
       </div>
-      <div class="teaser-slider__item-content-container">
-        <h2 class="teaser-slider__item-title">
+      <div class="teaser-slider__item-content-container ">
+        <h2>
           <?php print $fields["title"]->content; ?>
         </h2>
         <p class="teaser-slider__item-text">
@@ -15,6 +15,6 @@
           <?php print $fields["field_button_text"]->content; ?>
         </a>
       </div>
-    </div>
+    </div>-->
   </a>
 </article>
