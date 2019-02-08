@@ -4,7 +4,7 @@
       <div class="cta_image-container">
         <?php print $fields["field_bild"]->content; ?>
       </div>
-      <div>
+      <div class="cta_text-container">
         <h2>
           <?php print $fields["title"]->content; ?>
         </h2>

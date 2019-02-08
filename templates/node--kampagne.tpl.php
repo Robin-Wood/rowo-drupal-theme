@@ -43,7 +43,7 @@
   <?php if (!empty($block_cta)): ?>
     <div class="article__cta-block">
       <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="col-xs-12">
           <?php print render($block_cta); ?>
         </div>
       </div>

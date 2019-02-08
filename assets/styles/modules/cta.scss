@@ -1,7 +1,8 @@
 .cta {
   font-family: $font-mark;
   
-  .cta_image-container {
+  .cta_image-container,
+  .cta_text-container {
     width: 50%;
   }
 }
