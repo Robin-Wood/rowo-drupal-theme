@@ -4,6 +4,11 @@
       <div class="teaser-slider__item-image-container">
         <?php print $fields["field_bild"]->content; ?>
       </div>
+      <div>
+        <h2>
+          <?php print $fields["title"]->content; ?>
+        </h2>
+      </div>
 <!--      <div class="teaser-slider__item-content-container ">
         <h2>
           <?php print $fields["title"]->content; ?>
