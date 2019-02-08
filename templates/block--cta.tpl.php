@@ -1,8 +1,12 @@
 <section class="test">
   <a class="outer-link" href="https://www.robinwood.de">
-    <?php print $fields['title']->content; ?>
-    <?php print $fields['field_bild']->content; ?>
-    <?php print $fields['field_kurzer_text']->content; ?>
-    <?php print $fields['field_button_text']->content; ?>
+    <div class="teaser-slider__item equal-height-children">
+      <div class="teaser-slider__item-image-container">
+        <?php print $content['field_bild']; ?>
+      </div>
+      <?php print $content['title']; ?>
+      <?php print $content['field_kurzer_text']; ?>
+      <?php print $content['field_button_text']; ?>
+    </div>
   </a>
 </section>
