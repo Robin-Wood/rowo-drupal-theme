@@ -1,5 +1,11 @@
 .cta {
+  
   font-family: $font-mark;
+  
+  .cta_container {
+    display: flex;
+    flex-direction: column;
+  }
   
   .cta_image-container,
   .cta_text-container {
