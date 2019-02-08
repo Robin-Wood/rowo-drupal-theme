@@ -2,7 +2,7 @@
   <a class="outer-link" href="https://www.robinwood.de">
     <div class="teaser-slider__item equal-height-children">
       <div class="teaser-slider__item-image-container">
-        <?php dsm($node) ?>
+        <?php dsm($content) ?>
       </div>
     </div>
   </a>
