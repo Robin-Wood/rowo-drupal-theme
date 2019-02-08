@@ -1,7 +1,7 @@
 <article class="cta">
   <a class="outer-link" href="https://www.robinwood.de">
     <div>
-      <div class="teaser-slider__item-image-container">
+      <div class="cta_image-container">
         <?php print $fields["field_bild"]->content; ?>
       </div>
       <div>
