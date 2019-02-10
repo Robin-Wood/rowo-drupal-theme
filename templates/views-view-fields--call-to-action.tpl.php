@@ -9,10 +9,10 @@
           <?php print $fields["title"]->content; ?>
         </h2>
         <p>
-          <?php print $field["field_kurzer_text"]->content; ?>
+          <?php print $fields["field_kurzer_text"]->content; ?>
         </p>
         <button class="button button--window button--is-centered">
-          <?php print $field["field_button_text"]->content; ?>
+          <?php print $fields["field_button_text"]->content; ?>
         </button>
       </div>
     </div>

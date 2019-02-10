@@ -10,6 +10,7 @@
   .cta_image-container,
   .cta_text-container {
     display: flex;
+    flex-direction: column;
     flex: wrap;
     width: 50%;
   }
@@ -17,7 +18,7 @@
   .cta_text-container {
     padding: 3.5rem;
     
-    &:before {
+    &::before {
       @include triangle(left, $color-green, 1.5rem);
     }
   }
