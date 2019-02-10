@@ -1,6 +1,7 @@
 .cta {
   
   font-family: $font-mark;
+  text-align: center;
   
   .cta_container {
     display: flex;
@@ -20,6 +21,11 @@
     
     &::before {
       @include triangle(left, $color-green, 1.5rem);
+    }
+    
+    .button {
+      background-color: white;
+      color: $color-green;
     }
   }
 }
