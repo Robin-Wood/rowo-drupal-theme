@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 @import "licenses.scss";
 @import "fonts.scss";
@@ -7,7 +8,6 @@
 @import "modules/cta.scss";
 
 /*
-@import "_mixins.scss";
 
 @import "modules/about.scss";
 @import "modules/app.scss";
