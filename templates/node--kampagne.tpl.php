@@ -39,17 +39,6 @@
     </div>
   <?php endif; ?>
   
-  <?php $block_cta = block_get_blocks_by_region('cta'); ?>
-  <?php if (!empty($block_cta)): ?>
-    <div class="article__cta-block">
-      <div class="row">
-        <div class="col-xs-12">
-          <?php print render($block_cta); ?>
-        </div>
-      </div>
-    </div>
-  <?php endif; ?>
-
   <?php if (!empty($content['field_foto_slider_bilder'])): ?>
     <?php print render($content['field_slideshow_view']); ?>
   <?php endif; ?>
@@ -73,6 +62,17 @@
           </div>
         <?php endif; ?>
       </div>
+      
+      <?php $block_cta = block_get_blocks_by_region('cta'); ?>
+      <?php if (!empty($block_cta)): ?>
+        <div class="article__cta-block">
+          <div class="row">
+            <div class="col-xs-12">
+              <?php print render($block_cta); ?>
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
 
       <?php if (!empty($content['field_tags'])): ?>
         <footer class="article__tags-container">

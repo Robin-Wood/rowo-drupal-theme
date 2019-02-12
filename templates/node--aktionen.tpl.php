@@ -55,7 +55,24 @@
         <span class="article__category">Aktion</span>
 
         <?php print render($content['field_text']); ?>
+      </div>
+    </div>
+  </div>
+  
+  <?php $block_cta = block_get_blocks_by_region('cta'); ?>
+  <?php if (!empty($block_cta)): ?>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="article__cta-block">
+          <?php print render($block_cta); ?>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
 
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="article__text">
         <?php if (!empty($content['field_einzelfoto'])): ?>
           <figure class="figure">
             <?php print render($content['field_einzelfoto']); ?>
