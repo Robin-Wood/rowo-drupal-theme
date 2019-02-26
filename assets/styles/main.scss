@@ -528,7 +528,8 @@
     margin-top: 1.5rem
 }
 
-.article__block-headline {
+.article__block-headline,
+h2.block-title {
     font-size: 2rem;
     font-family: $font-mark;
     font-weight: 700;
