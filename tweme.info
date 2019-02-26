@@ -22,6 +22,7 @@ regions[footer] = Footer
 regions[page_bottom] = Page bottom
 regions[body_bottom] = Body bottom
 regions[cta] = Call to action
+regions[related] = Related Content
 regions[text] = Text
 
 ; Information added by Drupal.org packaging script on 2015-09-14

@@ -64,6 +64,13 @@
             </div>
           <?php endif; ?>
 
+        <?php
+          $block_related = block_get_blocks_by_region('related');
+          if (!empty($block_cta)):
+            print render($block_cta);
+          endif;
+        ?>
+          
           <?php if (!empty($content['field_aktuelle_termine'])): ?>
             <div class="article__block">
               <?php print render($content['field_aktuelle_termine']); ?>
