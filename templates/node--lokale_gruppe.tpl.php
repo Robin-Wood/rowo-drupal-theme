@@ -67,12 +67,15 @@
       </div>
     </div>
   </div>
-  <?php
-    $block_related = block_get_blocks_by_region('related');
-    if (!empty($block_related)):
-      print render($block_related);
-    endif;
-  ?>
+  
+  <div class="related-content">
+    <?php
+      $block_related = block_get_blocks_by_region('related');
+      if (!empty($block_related)):
+        print render($block_related);
+      endif;
+    ?>
+  </div>
   
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
