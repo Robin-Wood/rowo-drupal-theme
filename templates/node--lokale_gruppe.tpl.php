@@ -56,30 +56,14 @@
           </h3>
           <?php print render($block_text); ?>
         <?php endif; ?>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      <div class="article__text">
-        <h3 class="article__block-headline">Termine</h3>
-      </div>
-    </div>
-  </div>
-  
-  <div class="related-content">
-    <?php
-      $block_related = block_get_blocks_by_region('related');
-      if (!empty($block_related)):
-        print render($block_related);
-      endif;
-    ?>
-  </div>
-  
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      <div class="article__text">
+        
+        <?php
+          $block_related = block_get_blocks_by_region('related');
+          if (!empty($block_related)):
+            print render($block_related);
+          endif;
+        ?>
+
         <div class="article__actions">
           <?php if (!empty($content['field_aktuelles_aus_der_gruppe_l'])): ?>
             <div class="article__block">
