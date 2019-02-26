@@ -31,7 +31,7 @@
 
 .about__content-container {
     background-color: #fff;
-    color: #191919;
+    color: $color-black;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-wrap: wrap;
@@ -49,7 +49,7 @@
     font-family: $font-mark;
     font-weight: 700;
     line-height: 1;
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     margin-bottom: 0;
     margin-top: 0;
@@ -157,7 +157,7 @@
 }
 
 .about--is-index .about__content-container {
-    background-color: #191919
+    background-color: $color-black
 }
 
 #block-views-wer-wir-sind-block-3 .about--is-index .about__content-container,
@@ -169,7 +169,7 @@
 
 .app {
     background-color: #e6e5e6;
-    color: #191919;
+    color: $color-black;
     max-width: 100%;
     min-height: 100vh;
     overflow-x: hidden
@@ -299,7 +299,7 @@
     font-family: $font-mark;
     font-weight: 700;
     line-height: 1.35;
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     padding: 3.5rem
 }
@@ -465,7 +465,7 @@
 
 .article__meta-category {
     font-weight: 700;
-    color: #191919;
+    color: $color-black;
     margin-top: .2rem;
     text-transform: uppercase
 }
@@ -483,7 +483,7 @@
     font-family: $font-mark;
     font-weight: 700;
     line-height: 1.2;
-    color: #191919;
+    color: $color-black;
     display: block;
     margin-top: 2rem
 }
@@ -554,7 +554,7 @@ h2.block-title {
 }
 
 .article__actions a {
-    color: #191919
+    color: $color-black
 }
 
 .article__links-container,
@@ -684,8 +684,8 @@ h2.block-title {
 
 .button--window:focus,
 .button--window:hover {
-    background-color: #191919;
-    border-color: #191919;
+    background-color: $color-black;
+    border-color: $color-black;
     color: #fff;
     text-decoration: none
 }
@@ -708,7 +708,7 @@ h2.block-title {
 }
 
 .campaign {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     display: -ms-flexbox;
     display: flex;
@@ -781,7 +781,7 @@ h2.block-title {
 .campaign__image-container:after {
     width: 0;
     height: 0;
-    border-bottom: 1.5rem solid #191919;
+    border-bottom: 1.5rem solid $color-black;
     border-left: 1.5rem solid transparent;
     border-right: 1.5rem solid transparent;
     bottom: 0;
@@ -835,7 +835,7 @@ h2.block-title {
 
 .content-slider .slick-arrow:focus,
 .content-slider .slick-arrow:hover {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff
 }
 
@@ -878,7 +878,7 @@ h2.block-title {
     font-family: $font-mark;
     font-weight: 500;
     line-height: 1.4;
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     margin-bottom: 1rem;
     padding: .3rem;
@@ -1068,7 +1068,7 @@ h2.block-title {
 }
 
 .filter-bar button {
-    background: #191919;
+    background: $color-black;
     border: none;
     color: #fff;
     padding: .5rem 1rem;
@@ -1117,7 +1117,7 @@ h2.block-title {
     font-family: $font-mark;
     font-weight: 700;
     line-height: 1.2;
-    color: #191919;
+    color: $color-black;
     margin-bottom: 0;
     margin-top: 0;
     text-transform: uppercase
@@ -1146,7 +1146,7 @@ h2.block-title {
 }
 
 .footer__logo-bar {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     padding-bottom: .5rem;
     padding-top: .5rem;
@@ -1201,7 +1201,7 @@ h2.block-title {
 
 .footer .social-media__outer:focus,
 .footer .social-media__outer:hover {
-    background-color: #191919;
+    background-color: $color-black;
     color: $color-green
 }
 
@@ -1224,7 +1224,7 @@ h2.block-title {
 }
 
 .header {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     padding: .3rem
 }
@@ -1242,7 +1242,7 @@ h2.block-title {
 }
 
 .extension {
-    color: #191919;
+    color: $color-black;
     display: block;
     padding-left: 4.5rem;
     position: relative
@@ -1318,7 +1318,7 @@ h2.block-title {
 }
 
 .more--is-grey {
-    color: #191919
+    color: $color-black
 }
 
 .more--is-white {
@@ -1377,7 +1377,7 @@ h2.block-title {
 }
 
 .navigation-main__logo-container {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     display: -ms-flexbox;
     display: flex;
@@ -1605,13 +1605,13 @@ h2.block-title {
     display: inline-block;
     padding: .8rem 1.5rem;
     text-decoration: none;
-    color: #191919
+    color: $color-black
 }
 
 .pager-show-more-next>a:focus,
 .pager-show-more-next>a:hover {
-    background-color: #191919;
-    border-color: #191919;
+    background-color: $color-black;
+    border-color: $color-black;
     color: #fff;
     text-decoration: none
 }
@@ -1634,7 +1634,7 @@ h2.block-title {
 }
 
 .social-media__outer {
-    border: .15rem solid #191919;
+    border: .15rem solid $color-black;
     border-radius: 50%;
     display: inline-block;
     height: 3.5rem;
@@ -1929,6 +1929,7 @@ h2.block-title {
 }
 
 .teaser-date__text {
+    color: $color-black;
     font-size: 1.4375rem;
     font-family: $font-mark;
     font-weight: 500;
@@ -1947,7 +1948,7 @@ h2.block-title {
 .teaser-highlight {
     -ms-flex-align: start;
     align-items: flex-start;
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff;
     display: -ms-flexbox;
     display: flex;
@@ -1972,7 +1973,7 @@ h2.block-title {
 .teaser-highlight>.button:focus,
 .teaser-highlight>.button:hover {
     background-color: #fff;
-    color: #191919
+    color: $color-black
 }
 
 .teaser-highlight__title {
@@ -2006,7 +2007,7 @@ h2.block-title {
 .teaser-highlight__image-container:after {
     width: 0;
     height: 0;
-    border-bottom: 1.5rem solid #191919;
+    border-bottom: 1.5rem solid $color-black;
     border-left: 1.5rem solid transparent;
     border-right: 1.5rem solid transparent;
     bottom: 0;
@@ -2034,12 +2035,12 @@ h2.block-title {
 
 .teaser-highlight--is-green {
     background-color: $color-green;
-    color: #191919
+    color: $color-black
 }
 
 .teaser-highlight--is-green>.button:focus,
 .teaser-highlight--is-green>.button:hover {
-    background-color: #191919;
+    background-color: $color-black;
     color: $color-green
 }
 
@@ -2053,12 +2054,12 @@ h2.block-title {
 
 .teaser-highlight--is-grey {
     background-color: #d9d9d9;
-    color: #191919
+    color: $color-black
 }
 
 .teaser-highlight--is-grey>.button:focus,
 .teaser-highlight--is-grey>.button:hover {
-    background-color: #191919;
+    background-color: $color-black;
     color: #d9d9d9
 }
 
@@ -2156,7 +2157,7 @@ h2.block-title {
 
 .teaser-slider__item-content-container--we-make-pressure,
 .teaser-slider__item-content-container--what-we-do {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff
 }
 
@@ -2164,7 +2165,7 @@ h2.block-title {
 .teaser-slider__item-content-container--what-we-do:before {
     width: 0;
     height: 0;
-    border-bottom: 1.5rem solid #191919;
+    border-bottom: 1.5rem solid $color-black;
     border-left: 1.5rem solid transparent;
     border-right: 1.5rem solid transparent
 }
@@ -2174,7 +2175,7 @@ h2.block-title {
     .teaser-slider__item-content-container--what-we-do:before {
         width: 0;
         height: 0;
-        border-right: 1.5rem solid #191919;
+        border-right: 1.5rem solid $color-black;
         border-bottom: 1.5rem solid transparent;
         border-top: 1.5rem solid transparent
     }
@@ -2182,7 +2183,7 @@ h2.block-title {
 
 .teaser-slider__item-content-container--whats-new {
     background-color: #fff;
-    color: #191919
+    color: $color-black
 }
 
 .teaser-slider__item-content-container--whats-new:before {
@@ -2291,7 +2292,7 @@ h2.block-title {
 
 .teaser-slider .slick-arrow:focus,
 .teaser-slider .slick-arrow:hover {
-    background-color: #191919;
+    background-color: $color-black;
     color: #fff
 }
 
@@ -2338,7 +2339,7 @@ h2.block-title {
 
 .outer-link:focus .teaser-slider__item-category,
 .outer-link:hover .teaser-slider__item-category {
-    color: #191919
+    color: $color-black
 }
 
 .outer-link:focus .teaser-slider__item-content-container--we-make-pressure .teaser-slider__item-title,
@@ -2352,7 +2353,7 @@ h2.block-title {
 
 .outer-link:focus .teaser-slider__item-content-container--whats-new .teaser-slider__item-category,
 .outer-link:hover .teaser-slider__item-content-container--whats-new .teaser-slider__item-category {
-    color: #191919
+    color: $color-black
 }
 
 .outer-link:focus .teaser-slider__item-content-container--we-make-pressure .teaser-slider__item-category,
@@ -2411,7 +2412,7 @@ h2.block-title {
 
 .outer-link:focus .topic__image-container,
 .outer-link:hover .topic__image-container {
-    background-color: #191919
+    background-color: $color-black
 }
 
 .topic__content-container {
