@@ -83,14 +83,6 @@
               <?php print render($content['field_aktuelles_aus_der_gruppe_l']); ?>
             </div>
           <?php endif; ?>
-
-
-          
-          <?php if (!empty($content['field_aktuelle_termine'])): ?>
-            <div class="article__block">
-              <?php print render($content['field_aktuelle_termine']); ?>
-            </div>
-          <?php endif; ?>
         </div>
       </div>
 
