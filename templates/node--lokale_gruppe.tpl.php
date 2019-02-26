@@ -66,8 +66,8 @@
 
         <?php
           $block_related = block_get_blocks_by_region('related');
-          if (!empty($block_cta)):
-            print render($block_cta);
+          if (!empty($block_related)):
+            print render($block_related);
           endif;
         ?>
           
