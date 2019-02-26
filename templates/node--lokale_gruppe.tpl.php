@@ -63,14 +63,6 @@
             print render($block_termine);
           endif;
         ?>
-
-        <div class="article__actions">
-          <?php if (!empty($content['field_aktuelles_aus_der_gruppe_l'])): ?>
-            <div class="article__block">
-              <?php print render($content['field_aktuelles_aus_der_gruppe_l']); ?>
-            </div>
-          <?php endif; ?>
-        </div>
       </div>
 
       <?php if (!empty($content['field_links_multi'])): ?>
