@@ -63,7 +63,7 @@
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
       <div class="article__text">
-        <h3>Termine</h3>
+        <h3 class="article__block-headline">Termine</h3>
       </div>
     </div>
   </div>
