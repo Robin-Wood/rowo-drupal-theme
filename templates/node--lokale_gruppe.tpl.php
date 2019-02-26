@@ -58,9 +58,9 @@
         <?php endif; ?>
         
         <?php
-          $block_related = block_get_blocks_by_region('related');
-          if (!empty($block_related)):
-            print render($block_related);
+          $block_termine = block_get_blocks_by_region('termine');
+          if (!empty($block_termine)):
+            print render($block_termine);
           endif;
         ?>
 
@@ -87,6 +87,13 @@
     </div>
   </div>
 </article>
+
+<?php
+  $block_related = block_get_blocks_by_region('related');
+  if (!empty($block_related)):
+    print render($block_related);
+  endif;
+?>
 
 <div class="back hidden-print">
   <a href="/wer-wir-sind"
