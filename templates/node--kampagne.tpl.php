@@ -65,20 +65,23 @@
     </div>
   </div>
   
-  <?php $block_cta = block_get_blocks_by_region('cta'); ?>
-  <?php if (!empty($block_cta)): ?>
-    <div class="article__cta-block">
-      <div class="row">
-        <div class="col-xs-12">
-          <?php print render($block_cta); ?>
+  <?php
+    if (!empty($content['field_call_to_action'])):
+      print render($content['field_call_to_action']);
+    else :
+      $block_cta = block_get_blocks_by_region('cta');
+      if (!empty($block_cta)): ?>
+        <div class="article__cta-block">
+          <div class="row">
+            <div class="col-xs-12">
+              <?php print render($block_cta); ?>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      <?php endif; ?>
   <?php endif; ?>
   
-  <?php if (!empty($content['field_call_to_action'])): ?>
-    <?php print render($content['field_call_to_action']); ?>
-  <?php endif; ?>
+  
 
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
