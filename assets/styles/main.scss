@@ -407,6 +407,14 @@
     line-height: 1.45;
     padding-left: 2.5rem;
     padding-right: 2.5rem
+    
+    p {
+      overflow: hidden;
+    }
+    
+    a {
+      color: $color-green
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -415,10 +423,6 @@
         padding-left: 0;
         padding-right: 0
     }
-}
-
-.article__text a {
-    color: $color-green
 }
 
 .article--page .article__text {
