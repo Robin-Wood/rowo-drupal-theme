@@ -1,7 +1,7 @@
 <article class="cta">
   <a class="outer-link" href="https://www.robinwood.de">
     <div class="cta_container">
-      <?php if (!empty($fields["field_bild"])): ?>
+      <?php if (!empty($fields["field_bild"]->content)): ?>
         <div class="cta_image-container">
           <?php print $fields["field_bild"]->content; ?>
         </div>
