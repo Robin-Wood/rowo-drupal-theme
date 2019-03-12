@@ -3,7 +3,7 @@
     <div class="cta_container">
       <?php if (!empty($content["field_bild"])): ?>
         <div class="cta_image-container">
-          <?php print $content["field_bild"]; ?>
+          <?php render($content["field_bild"]); ?>
         </div>
       <?php endif; ?>
       <div class="cta_text-container <?php if (!empty($content["field_bild"])): ?>cta_large<?php endif; ?>">
@@ -12,11 +12,11 @@
         </h2>
         <?php if (!empty($content["field_bild"])): ?>
           <p>
-            <?php print $content["field_kurzer_text"]; ?>
+            <?php render(content["field_kurzer_text"]); ?>
           </p>
         <?php endif; ?>
         <button class="button button--window button--is-centered">
-          <?php print $content["field_button_text"]; ?>
+          <?php render($content["field_button_text"]); ?>
         </button>
       </div>
     </div>
