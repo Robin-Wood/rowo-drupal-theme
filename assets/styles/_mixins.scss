@@ -80,6 +80,7 @@
     @error "Direction must be either `top`, `right`, `bottom` or `left`.";
   }
 
+  content: ' ';
   width: 0;
   height: 0;
   border-#{opposite-direction($direction)}: ($size * 1.5) solid $color;
