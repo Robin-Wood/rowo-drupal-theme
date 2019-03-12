@@ -20,6 +20,10 @@
   .cta_text-container {
     padding: 3.5rem;
     
+    &.cta_large {
+      padding: 0 2rem 2rem;
+    }
+    
     &::before {
       @include triangle(left, $color-green, 1.5rem);
     }
