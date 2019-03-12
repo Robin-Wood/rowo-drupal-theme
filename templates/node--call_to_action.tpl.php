@@ -12,7 +12,7 @@
         </h2>
         <?php if (!empty($content["field_bild"])): ?>
           <p>
-            <?php render(content["field_kurzer_text"]); ?>
+            <?php render($content["field_kurzer_text"]); ?>
           </p>
         <?php endif; ?>
         <button class="button button--window button--is-centered">
