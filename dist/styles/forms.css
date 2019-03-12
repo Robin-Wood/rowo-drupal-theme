@@ -225,25 +225,6 @@ textarea.form-textarea {
   }
 }
 
-
-/*Vorübergehende Styles für die Call-to-Action-Blocks / Formulare */
-
-.article__cta-block {
-  background-color: #a2c516;
-  color: white;
-  font-family: MarkWebPro,sans-serif;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-@media screen and ( min-width: 768px ) {
-  .article__cta-block {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-}
-
-
 /*Vorübergehende Styles für Twitter-Blocks */
 
 .view-tweets-rg ul {
