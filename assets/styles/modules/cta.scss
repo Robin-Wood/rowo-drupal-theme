@@ -1,5 +1,5 @@
 .cta {
-  color: white;
+  color: $color-white;
   background-color: $color-green;
   font-family: $font-mark;
   margin: 1.5rem -1.5rem;
@@ -32,12 +32,13 @@
     background-color: $color-green;
     
     .button {
-      background-color: white;
+      background-color: $color-white;
       color: $color-green;
       
       &:hover,
       &:focus {
-        background-color: $color-black;
+        background-color: $color-green;
+        color: $color-white;
       }
     }
     
@@ -55,7 +56,8 @@
       
       &:hover,
       &:focus {
-        background-color: white;
+        background-color: $color-black;
+        color: $color-green;
       }
     }
     
