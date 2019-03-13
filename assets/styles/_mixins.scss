@@ -81,8 +81,10 @@
   }
 
   content: ' ';
-  width: 0;
   height: 0;
+  width: 0;
+  position: absolute;
+  #{opposite-direction($direction)}: 50%;
   border-#{opposite-direction($direction)}: ($size * 1.5) solid $color;
 
   $perpendicular-borders: $size solid transparent;
