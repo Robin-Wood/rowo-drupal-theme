@@ -43,7 +43,7 @@
       }
     }
     
-    .cta_text-container::before {
+    .cta_image-container::after {
       @include triangle(left, $color-green, 1.5rem);
     }
   }
@@ -63,7 +63,7 @@
       }
     }
     
-    .cta_text-container::before {
+    .cta_image-container::after {
       @include triangle(left, $color-black, 1.5rem);
     }
   }
