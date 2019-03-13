@@ -20,10 +20,6 @@
     width: 50%;
   }
   
-  .cta_image-container:after {
-    @include triangle(left, $color-green, 1.5rem);
-  }
-  
   .cta_text-container {
     padding: 0 2rem 2rem;
     
@@ -33,10 +29,6 @@
     
     &::before {
       @include triangle(left, $color-green, 1.5rem);
-    }
-    
-    h2 {
-      margin-top: 0;
     }
     
     .button {
