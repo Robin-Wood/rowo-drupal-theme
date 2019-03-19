@@ -1,5 +1,5 @@
 <article class="cta cta__<?php print render($content["field_stil"]); ?>">
-  <a class="outer-link" href="https://www.robinwood.de">
+  <a class="outer-link" href="<?php print render($content["field_link"]); ?>">
     <div class="cta_container">
       <?php if (!empty($content["field_bild"])): ?>
         <div class="cta_image-container">
