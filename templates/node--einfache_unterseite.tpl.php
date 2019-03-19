@@ -16,18 +16,18 @@
       <?php endif; ?>
     </div>
   </div>
-  
-  <?php
-    if (!empty($content['field_call_to_action'])):
-      print render($content['field_call_to_action']);
-    else :
-      $block_cta = block_get_blocks_by_region('cta');
-      if (!empty($block_cta)):
-        print render($block_cta);
-      endif;
-    endif;
-  ?>
 </article>
+
+<?php
+  if (!empty($content['field_call_to_action'])):
+    print render($content['field_call_to_action']);
+  else :
+    $block_cta = block_get_blocks_by_region('cta');
+    if (!empty($block_cta)):
+      print render($block_cta);
+    endif;
+  endif;
+?>
 
 <?php if (!empty($content['field_fachreferentin_view'])): ?>
   <?php print render($content['field_fachreferentin_view']); ?>

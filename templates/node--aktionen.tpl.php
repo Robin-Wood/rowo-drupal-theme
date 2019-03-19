@@ -85,8 +85,6 @@
         <?php $block = module_invoke('block', 'block_view', '2');?>
         <?php print render($block['content']); ?>
       </div>
-
-      <?php print render($content['comments']); ?>
     </div>
   </div>
 </article>
