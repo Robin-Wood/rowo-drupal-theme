@@ -1,5 +1,5 @@
 /**
- * Styles for donation and memebership forms as blocks using entityform_block
+ * Styles for donation and membership forms as blocks using entityform_block
  * module. These styles are strictly bound to the existing configuration.
  */
 .block-entityform-block.donation-membership-forms {
@@ -65,6 +65,10 @@
     margin: 0 auto;
   }
 
+  .pre-instructions {
+    font-weight: bold;
+  }
+
   .panel {
     border: none;
     margin: 0;
@@ -103,6 +107,101 @@
     line-height: 1;
   }
 
+  .form-item {
+    &.form-type-radio,
+    &.form-type-checkbox {
+      label {
+        text-transform: none;
+        font-weight: normal;
+      }
+    }
+
+    label {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  .form-type-radio {
+    label.control-label {
+      position: relative;
+      cursor: pointer !important;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid $color-black;
+        border-radius: 50%;
+      }
+
+      input.form-radio {
+        appearance: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: none;
+        margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+        cursor: pointer !important;
+
+        &:checked {
+          background-color: $color-green;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .form-type-checkbox {
+    label.control-label {
+      position: relative;
+      cursor: pointer !important;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid $color-black;
+      }
+
+      input.form-checkbox {
+        appearance: none;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: none;
+        margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+        cursor: pointer !important;
+
+        &:checked {
+          background-color: $color-green;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+
+    .form-submit {
+      display: inline-block;
+      border-radius: 1rem;
+      min-width: 20rem;
+      padding: 1rem;
+      font-weight: bold;
+    }
+  }
+
   .field-name-field-donation-is-recurring {
     border-top: 3px dotted grey;
 
@@ -112,6 +211,12 @@
       font-weight: bold;
       display: block;
       margin: 1.5rem 0;
+    }
+  }
+
+  .form-item-field-regular-donation-line-item-und-form-field-membership-interval-und {
+    > label[for="edit-field-regular-donation-line-item-und-form-field-membership-interval-und"] {
+      display: none;
     }
   }
 
@@ -139,7 +244,15 @@
       .form-type-radio {
         text-align: center;
 
-        input {
+        label {
+          &::before {
+            display: none;
+          }
+        }
+
+        input.form-radio {
+          height: auto;
+
           &:focus {
             outline: none;
           }
@@ -155,9 +268,8 @@
             position: relative;
             display: block;
             z-index: 1;
-            cursor: pointer;
 
-            input {
+            input.form-radio {
               appearance: none;
               display: block;
               border: none;
@@ -171,7 +283,6 @@
               width: 100%;
               z-index: -1;
               border-radius: 1.5rem;
-              cursor: pointer;
 
               &:checked {
                 background-color: $color-green;
@@ -189,16 +300,19 @@
           label {
             color: darkgrey;
             font-weight: bold;
-            cursor: pointer;
+            position: static;
           }
 
-          input {
+          input.form-radio {
             appearance: none;
             border: none;
             position: absolute;
-            cursor: pointer;
             width: 100%;
             height: 100%;
+
+            &:checked {
+              background: none;
+            }
           }
         }
       }
@@ -214,6 +328,81 @@
           width: 13rem;
           margin-right: 1rem;
         }
+      }
+    }
+  }
+
+  .field-type-commerce-customer-profile-reference {
+    .form-item {
+      &:not(.form-type-radio):not(.form-type-checkbox) {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+
+        > * {
+          flex: 1 1 50%;
+        }
+
+        > label {
+          text-align: right;
+          margin-right: 1rem;
+        }
+
+        .form-text,
+        .form-select {
+          width: 100%;
+        }
+      }
+    }
+
+    div.addressfield-container-inline > div.form-item {
+      float: none;
+    }
+  }
+
+  .field-name-field-newsletter-email,
+  .field-name-field-newsletter-postal {
+    display: flex;
+
+    &::before {
+      content: '';
+      flex: 1 1 50%;
+    }
+
+    > * {
+      flex: 1 1 50%;
+    }
+
+    > .form-item {
+      display: flex;
+      position: relative;
+      min-height: 2.5rem;
+
+      > * {
+        flex: 0 1 auto;
+      }
+
+      > label {
+        position: absolute;
+        right: 100%;
+        width: 100%;
+        text-align: right;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &::before {
+          right: -3.5rem;
+        }
+
+        > input {
+          position: absolute;
+          right: -4.5rem;
+        }
+      }
+
+      > .help-block {
+        margin-left: 4rem;
       }
     }
   }
