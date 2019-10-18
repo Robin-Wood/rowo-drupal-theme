@@ -80,7 +80,9 @@
     &#edit-field-line-item-donation-und,
     &#edit-field-regular-donation-line-item-und,
     &#edit-field-line-item-donation-und-form-line-item-details,
-    &#edit-field-regular-donation-line-item-und-form-line-item-details {
+    &#edit-field-regular-donation-line-item-und-form-line-item-details,
+    &#edit-field-act-membership-line-item-und-form-line-item-details,
+    &#edit-field-sup-membership-line-item-und-form-line-item-details {
       border: none;
 
       .panel-heading {
@@ -214,9 +216,15 @@
     }
   }
 
-  .form-item-field-regular-donation-line-item-und-form-field-membership-interval-und {
-    > label[for="edit-field-regular-donation-line-item-und-form-field-membership-interval-und"] {
-      display: none;
+  .form-item-field-regular-donation-line-item-und-form-field-membership-interval-und,
+  .form-item-field-sup-membership-line-item-und-form-field-membership-interval-und,
+  .form-item-field-act-membership-line-item-und-form-field-active-membership-amount-und-select {
+    > label {
+      &[for="edit-field-regular-donation-line-item-und-form-field-membership-interval-und"],
+      &[for="edit-field-sup-membership-line-item-und-form-field-membership-interval-und"],
+      &[for="edit-field-act-membership-line-item-und-form-field-active-membership-amount-und-select"] {
+        display: none;
+      }
     }
   }
 
@@ -327,6 +335,19 @@
         input {
           width: 13rem;
           margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .field-name-field-active-membership-amount {
+    .form-radios {
+      > .form-item {
+        display: block;
+        margin: 1rem 0;
+
+        input.select-or-other-other {
+          margin-right: 0.5rem;
         }
       }
     }
