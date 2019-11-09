@@ -22,5 +22,23 @@ function tweme_css_alter(&$css) {
   $css = array_diff_key($css, $exclude);
 }
 
+/**
+ * Render select_or_other fields.
+ *
+ * @param $variables
+ *
+ * @return string
+ */
+function tweme_select_or_other($variables) {
+  $element = $variables['element'];
+
+  // Render the "other" textfield directly succeeding the "other" radio button.
+  $element['select']['select_or_other']['#suffix'] = drupal_render($element['other']);
+
+  $output = "<div class=\"select-or-other\">\n";
+  $output .= drupal_render_children($element) . "\n";
+  $output .= "</div>\n";
+  return $output;
+}
 
 ?>

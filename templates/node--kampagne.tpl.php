@@ -27,6 +27,11 @@
     </div>
   <?php endif; ?>
 
+  <?php $block_text = block_get_blocks_by_region('text'); ?>
+  <?php if (!empty($block_text)): ?>
+      <?php print render($block_text); ?>
+  <?php endif; ?>
+
   <?php if (!empty($content['field_foderungen'])): ?>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -89,6 +94,13 @@
     </div>
   </div>
 </article>
+
+<?php
+  $block_related = block_get_blocks_by_region('related');
+  if (!empty($block_related)):
+    print render($block_related);
+  endif;
+?>
 
 <?php
   if (!empty($content['field_call_to_action'])):
