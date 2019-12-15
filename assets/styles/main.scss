@@ -271,7 +271,8 @@
 }
 
 @media screen and (min-width:768px) {
-    .article__pre-teaser-container {
+    .article__pre-teaser-container,
+    .article__post-teaser-container {
         margin-left: -1.5rem;
         margin-right: -1.5rem
     }
@@ -284,14 +285,14 @@
     line-height: 1;
     margin-bottom: 0;
     margin-top: 0;
-    text-align: center
+    text-align: center;
 }
 
 .article__pre-teaser-title2 {
-    font-family: $font-mark
+    color: $color-black;
+    font-family: $font-mark;
     
     img {
-      color: $color-black;
       display: inline;
       margin-left: 5rem;
     }
