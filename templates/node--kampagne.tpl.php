@@ -32,18 +32,6 @@
       <?php print render($block_text); ?>
   <?php endif; ?>
 
-  <?php if (!empty($content['field_foderungen'])): ?>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <h2 class="article__subheadline">
-          <?php print render($content['field_titel_forderungen_kriterie']); ?>
-        </h2>
-
-        <?php print render($content['field_foderungen']); ?>
-      </div>
-    </div>
-  <?php endif; ?>
-
   <?php if (!empty($content['field_forderungen_kriterien'])): ?>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
