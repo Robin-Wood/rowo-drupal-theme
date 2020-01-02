@@ -1,4 +1,8 @@
-<article class="article">
+<article class="article" 
+<?php if (!empty($content['field_daten'])): ?>
+data-url="<?php print render ($content['field_daten']); ?>" 
+<?php endif; ?>
+>
    
   <?php if (!empty($title)): ?>
     <div class="article__pre-teaser-container">
@@ -19,7 +23,9 @@
     <div class="article__teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <p>Diagramme</p>
+          <?php if (!empty($content['field_strommix'])): ?>
+     	    <?php print render($content['field_strommix']); ?>
+          <?php endif; ?>
 	</div>
       </div>
     </div>
