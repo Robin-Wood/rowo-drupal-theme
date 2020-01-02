@@ -35,18 +35,27 @@
       margin-top: 0rem;
       margin-bottom: 1rem;
     }
-    p {
+    
+    td {
       font-weight: normal;
       font-size: 2rem;
-      margin: 0;
+      padding: 0 0.5rem;
     }
-    [data-water] {
+    
+    td:first-child {
+      text-align: right;
+    }
+    
+    [data-water],
+    .label-water {
       color: #009ee3;
     }
-    [data-wind] {
+    [data-wind],
+    .label-wind {
       color: white;
     }
-    [data-solar] {
+    [data-solar],
+    .label-solar {
       color: #ffff00;
     }
   }
