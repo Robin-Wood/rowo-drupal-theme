@@ -40,5 +40,14 @@
       margin-top: 0rem;
       margin-bottom: 1rem;
     }
+    [data-water] {
+      color: #009ee3;
+    }
+    [data-wind] {
+      color: white;
+    }
+    [data-solar] {
+      color: #ffff00;
+    }
   }
 }
