@@ -289,11 +289,13 @@
 }
 
 .article__pre-teaser-title2 {
+    align-items: center;
     color: $color-black;
+    display: flex;
     font-family: $font-mark;
+    justify-content: center;
     margin-bottom: 0;
     margin-top: 0;
-    text-align: center;
     
     img {
       display: inline;
