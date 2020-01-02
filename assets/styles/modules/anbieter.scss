@@ -20,6 +20,7 @@
   
   &__teaser {
     display: flex;
+    align-items: center;
   }
   
   &__legende {
@@ -29,7 +30,9 @@
       margin-bottom: 1rem;
     }
     p {
+      font-weight: normal;
       font-size: 2rem;
+      margin: 0;
     }
     [data-water] {
       color: #009ee3;
