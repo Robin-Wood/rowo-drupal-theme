@@ -1,0 +1,44 @@
+.anbieter {
+  background-color: $color-black;
+  color: $color-white;
+  font-family: $font-mark;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  
+  &:hover,
+  &:focus {
+    h3 {
+      color: $color-green;
+    }
+  }
+  
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  &__teaser {
+    display: flex;
+  }
+  
+  &__chart {
+    padding: 5rem;
+  }
+  
+  &__pseudo {
+    background-color: $color-green;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+  }
+  
+  &__legende {
+    h4, span {
+      display: block;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
