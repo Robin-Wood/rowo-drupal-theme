@@ -30,16 +30,14 @@
   &__legende {
     flex: 0 0 50%;
     
-    h4, span {
-      display: block;
-      margin-top: 0rem;
-      margin-bottom: 1rem;
-    }
-    
     td {
       font-weight: normal;
-      font-size: 2rem;
+      font-size: 2em;
       padding: 0 0.5rem;
+      
+      h3 {
+        margin: 0;
+      }
     }
     
     td:first-child {
