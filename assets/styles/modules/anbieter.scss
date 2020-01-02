@@ -22,23 +22,14 @@
     display: flex;
   }
   
-  &__chart {
-    padding: 5rem;
-  }
-  
-  &__pseudo {
-    background-color: $color-green;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    
-  }
-  
   &__legende {
     h4, span {
       display: block;
       margin-top: 0rem;
       margin-bottom: 1rem;
+    }
+    p {
+      font-size: 2rem;
     }
     [data-water] {
       color: #009ee3;
