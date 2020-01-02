@@ -23,7 +23,13 @@
     align-items: center;
   }
   
+  &__chart {
+    flex: 0 0 50%;
+  }
+  
   &__legende {
+    flex: 0 0 50%;
+    
     h4, span {
       display: block;
       margin-top: 0rem;
