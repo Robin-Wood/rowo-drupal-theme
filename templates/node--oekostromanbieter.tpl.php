@@ -19,23 +19,22 @@ data-url="<?php print render ($content['field_daten']); ?>"
     </div>
   <?php endif; ?>
 
-  <?php if (true): ?>
+  <?php if (!empty($content['field_strommix'])): ?>
     <div class="article__teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <?php if (!empty($content['field_strommix'])): ?>
-     	    <?php print render($content['field_strommix']); ?>
-          <?php endif; ?>
+     	  <?php print render($content['field_strommix']); ?>
 	</div>
       </div>
     </div>
   <?php endif; ?>
 
-  <?php if (true): ?>
+  <?php if (!empty($content['field_foerderbetrag'])): ?>
     <div class="article__post-teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <h3 class="article__post-teaser-title">Förderbetrag für die Energiewende<h3>
+          <h3 class="article__post-teaser-title">Förderbetrag für die Energiende</h3>
+          <span class="article__post-teaser-text"><?php print render($content['field_foerderbetrag']); ?></span>
         </div>
       </div>
     </div>
