@@ -23,8 +23,11 @@ data-url="<?php print render ($content['field_daten']); ?>"
     <div class="article__teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-     	  <?php print render($content['field_strommix']); ?>
-	</div>
+          <div class="anbieter__teaser">
+            <?php print render($content['field_strommix']); ?>
+            </div> <!-- Würgaround: Öffnendes div-Tag in Datei field__field-strommix.tpl.php -->
+          </div>
+        </div>
       </div>
     </div>
   <?php endif; ?>

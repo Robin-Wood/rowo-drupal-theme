@@ -6,8 +6,12 @@
         <?php print $fields["title"]->content;?>
       </h3>
     </header>
-
-    <?php print $fields["field_strommix"]->content;?>
+    <div class="anbieter__teaser">
+      <?php print $fields["field_strommix"]->content;?>
+      <h3>Förderbetrag für die Energiewende</h3>
+      <p><?php print $fields["field_foerderbetrag"]->content;?></p>
+      </div> <!-- Würgaround: Öffnendes div-Tag in Datei field__field-strommix.tpl.php -->
+    </div>
   </a>  
 </article>
 
