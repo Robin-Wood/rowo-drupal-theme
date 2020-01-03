@@ -18,11 +18,11 @@
           <td class="label-water">Wasser</td>
         </tr>
         <tr>
-          <td data-wind="<?php print($wind) ?>"><?php print(str_replace(',', '.', $wind)) ?>%</td>
+          <td data-wind="<?php print(str_replace(',', '.', $wind)) ?>"><?php print($wind) ?>%</td>
           <td class="label-wind">Windkraft</td>
         </tr>
         <tr>
-          <td data-solar="<?php print($solar) ?>"><?php print(str_replace(',', '.', $solar)) ?>%</td>
+          <td data-solar="<?php print(str_replace(',', '.', $solar)) ?>"><?php print($solar) ?>%</td>
           <td class="label-solar">Solar</td>
         </tr>
       </tbody>
