@@ -25,15 +25,17 @@
   
   &__chart {
     flex: 0 0 50%;
+    padding: 2rem;
   }
   
   &__legende {
     flex: 0 0 50%;
+    padding-right: 0.5rem;
     
     td {
       font-weight: normal;
       font-size: 2em;
-      padding: 0 0.5rem;
+      padding: 0 0.5rem 0 0;
       
       h3 {
         margin: 0;
@@ -73,14 +75,18 @@
 
 .anbieter {
   td {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     
     h3 {
       font-size: 1.4rem
     }
   }
   
+  td:first-child {
+    text-align: left;
+  }
+  
   p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
