@@ -33,8 +33,8 @@ data-url="<?php print render ($content['field_daten']); ?>"
     <div class="article__post-teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <h3 class="article__post-teaser-title">Förderbetrag für die Energiende</h3>
-          <span class="article__post-teaser-text"><?php print render($content['field_foerderbetrag']); ?></span>
+          <h3 class="article__post-teaser-title">Förderbetrag für die Energiewende</h3>
+          <p class="article__post-teaser-text"><?php print render($content['field_foerderbetrag']); ?></p>
         </div>
       </div>
     </div>

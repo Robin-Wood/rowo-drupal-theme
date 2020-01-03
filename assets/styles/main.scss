@@ -306,11 +306,19 @@
 .article__post-teaser-container {
   background-color: $color-grey;
   color: $color-black;
+  font-family: $font-mark;
   padding-bottom: 2rem;
   padding-top: 2rem;
   
   .article__post-teaser-title {
-    font-family: $font-mark;
+    font-weight: normal;
+    line-height: 0.4;
+    text-align: center;
+  }
+  
+  .article__post-teaser-text {
+    font-size: 2.7rem;
+    line-height: 3;
     text-align: center;
   }
 }
