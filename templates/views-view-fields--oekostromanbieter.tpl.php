@@ -7,10 +7,12 @@
       </h3>
     </header>
     <div class="anbieter__teaser">
-      <?php print $fields["field_strommix"]->content;?>
-      <h3>Förderbetrag für die Energiewende</h3>
-      <p><?php print $fields["field_foerderbetrag"]->content;?></p>
-      </div> <!-- Würgaround: Öffnendes div-Tag in Datei field__field-strommix.tpl.php -->
+      <div class="anbieter__chart chartcontainer" id="chart<?php print $fields['nid'];?>"></div>
+      <div data-piechart="chart<?php print $fields['nid'];?>" class="anbieter__legende">
+        <?php print $fields["field_strommix"]->content;?>
+        <h3>Förderbetrag für die Energiewende</h3>
+        <p><?php print $fields["field_foerderbetrag"]->content;?></p>
+      </div>
     </div>
   </a>  
 </article>

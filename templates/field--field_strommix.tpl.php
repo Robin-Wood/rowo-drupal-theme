@@ -4,12 +4,7 @@
     $wasser = $mix['field_wasser'][0]['#markup'];
     $wind = $mix['field_wind'][0]['#markup'];
     $solar = $mix['field_solar'][0]['#markup'];
-    $id = $element['#object']->nid;
 ?>
-
-  <div class="anbieter__chart chartcontainer" id="chart<?php print($id);?>"></div>
-
-  <div data-piechart="chart<?php print($id);?>" class="anbieter__legende">
     <table class="anbieter__table">
       <thead> 
         <tr>
