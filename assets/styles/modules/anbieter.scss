@@ -57,20 +57,30 @@
     .label-solar {
       color: #ffff00;
     }
+    
+    p {
+      margin: 0;
+    }
   }
   
   &__foerdertitle {
     border-top: 3px dotted;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 0.7rem 1.4rem 0 0;
     padding-top: 0.7rem;
   }
 }
 
-.anbieter td {
-  font-size: 1em;
+.anbieter {
+  td {
+    font-size: 1.8rem;
+    
+    h3 {
+      font-size: 1.4rem
+    }
+  }
   
-  h3 {
-    font-size: 1.4rem
+  p {
+    font-size: 1.8rem;
   }
 }
