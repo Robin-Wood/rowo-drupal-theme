@@ -7,7 +7,6 @@
     $id = $element['#object']->nid;
 ?>
 
-<div class="anbieter__teaser">
   <div class="anbieter__chart chartcontainer" id="chart<?php print($id);?>"></div>
 
   <div data-piechart="chart<?php print($id);?>" class="anbieter__legende">
@@ -33,8 +32,7 @@
         </tr>
       </tbody>
     </table>
-  </div>
-</div>
+
 <?php
     ++$index;
   endforeach;
