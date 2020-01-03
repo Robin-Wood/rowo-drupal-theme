@@ -8,7 +8,7 @@
   
   &:hover,
   &:focus {
-    h3 {
+    h3.anbieter__title {
       color: $color-green;
     }
   }
@@ -80,6 +80,10 @@
     h3 {
       font-size: 1.4rem
     }
+  }
+  
+  tr:first-child td:first-child {
+    display: none;
   }
   
   td:first-child {
