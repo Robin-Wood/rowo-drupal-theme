@@ -7,8 +7,8 @@
       </h3>
     </header>
     <div class="anbieter__teaser">
-      <div class="anbieter__chart chartcontainer" id="chart<?php print $fields['nid'];?>"></div>
-      <div data-piechart="chart<?php print $fields['nid'];?>" class="anbieter__legende">
+      <div class="anbieter__chart chartcontainer" id="chart<?php print $fields['nid']->content;?>"></div>
+      <div data-piechart="chart<?php print $fields['nid']->content;?>" class="anbieter__legende">
         <?php print $fields["field_strommix"]->content;?>
         <h3>Förderbetrag für die Energiewende</h3>
         <p><?php print $fields["field_foerderbetrag"]->content;?></p>
