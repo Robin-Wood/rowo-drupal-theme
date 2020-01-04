@@ -6,8 +6,8 @@
   margin-bottom: 1rem;
   width: 100%;
   
-  &:hover,
-  &:focus {
+  a &:hover,
+  a &:focus {
     h3.anbieter__title {
       color: $color-green;
     }
@@ -103,7 +103,7 @@
     text-align: left;
   }
   
-  p {
+  .anbieter__legende p {
     font-size: 1.7rem;
   }
 }
