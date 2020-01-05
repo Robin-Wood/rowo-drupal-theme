@@ -114,9 +114,9 @@
   
   p {
     font-size: 1.7rem;
-  }
-  
-  .anbieter__methode p {
-    font-size: 1.25rem;
+    
+    &.anbieter_methode {
+      font-size: 1.25rem;
+    }
   }
 }
