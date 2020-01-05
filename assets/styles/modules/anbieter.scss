@@ -6,8 +6,8 @@
   margin-bottom: 1rem;
   width: 100%;
   
-  a &:hover,
-  a &:focus {
+  a::hover,
+  a::focus {
     h3.anbieter__title {
       color: $color-green;
     }
