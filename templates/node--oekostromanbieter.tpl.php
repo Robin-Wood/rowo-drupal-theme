@@ -64,15 +64,15 @@ data-url="<?php print render ($content['field_daten']); ?>"
 <?php
   $referer = $_SERVER['HTTP_REFERER'];
   $referer_title = $_SESSION['HTTP_REFERER_TITLE'];
-  $has_rw_referer = preg_match("/robinwood\.de\/(.*)/", $referer, $content_slug);
+  $has_rw_referer = preg_match("/robinwood\.de\/oekostromreport(.*)/", $referer, $content_slug);
   $_SESSION['HTTP_REFERER_TITLE'] = '';
 ?>
 
-<?php if ($has_rw_referer && $referer_title): ?>
+<?php if ($has_rw_referer): ?>
   <?php $title = $content_slug[1]; ?>
 
   <div class="back hidden-print">
     <a href="<?php print($referer) ?>"
-       class="back__title">◂ Zu "<?php print($referer_title) ?>"</a>
+       class="back__title">◂ Zum Ökostromreport</a>
   </div>
 <?php endif; ?>
