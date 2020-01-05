@@ -37,11 +37,6 @@
   &__box {
     border-top: 3px dotted;
     margin: 2rem 0;
-    padding-top: 0.7rem;
-  }
-  
-  &__methode {
-    font-size: 1.25rem;
   }
   
   &__legende {
@@ -119,5 +114,9 @@
   
   p {
     font-size: 1.7rem;
+  }
+  
+  .anbieter__methode p {
+    font-size: 1.25rem;
   }
 }
