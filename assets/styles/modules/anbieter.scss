@@ -86,10 +86,6 @@
 
 .anbieter {
   
-  a {
-    color: $color-green;
-  }
-  
   > a {
     display: flex;
     flex-direction: column;
@@ -118,5 +114,9 @@
     &.anbieter__methode {
       font-size: 1.25rem;
     }
+  }
+  
+  .anbieter__info a {
+    color: $color-green;
   }
 }
