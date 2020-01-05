@@ -34,6 +34,12 @@
     padding: 2rem;
   }
   
+  &__box {
+    border-top: 3px dotted;
+    margin: 0.7rem 1.4rem 0 0;
+    padding-top: 0.7rem;
+  }
+  
   &__legende {
     flex: 0 0 50%;
     padding: 2rem 2rem 2rem 0;
@@ -81,6 +87,10 @@
 
 .anbieter {
   
+  a {
+    color: $color-green;
+  }
+  
   > a {
     display: flex;
     flex-direction: column;
@@ -103,7 +113,7 @@
     text-align: left;
   }
   
-  .anbieter__legende p {
+  p {
     font-size: 1.7rem;
   }
 }
