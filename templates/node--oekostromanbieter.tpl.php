@@ -44,6 +44,28 @@ data-url="<?php print render ($content['field_daten']); ?>"
       </div>
     </div>
   <?php endif; ?>
+  
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="article__text">
+        <?php if (!empty($content['field_text'])): ?>
+          <?php print render($content['field_text']); ?>
+        <?php endif; ?>
+      </div>
+        
+      <?php if (!empty($content['field_links_multi'])): ?>
+        <div class="article__links-container">
+          <?php print render($content['field_links_multi']); ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($content['field_datei_upload'])): ?>
+        <footer class="article__meta-container">
+          <?php print render($content['field_datei_upload']); ?>
+        </footer>
+      <?php endif; ?>
+    </div>
+  </div>
 
   <?php if (!empty($content['field_text'])): ?>
     <div class="row">
