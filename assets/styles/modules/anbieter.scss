@@ -49,7 +49,6 @@
   
   &__legende {
     flex: 0 0 50%;
-    hyphens: auto;
     padding: 2rem 2rem 2rem 0;
     
     td {
@@ -107,6 +106,7 @@
   
   td {
     font-size: 1.6875rem;
+    hyphens: auto;
     
     h3 {
       font-size: 1.4375rem
