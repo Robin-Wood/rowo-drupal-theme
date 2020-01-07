@@ -1,0 +1,50 @@
+.ctools-collapsible-container {
+  
+  margin-top: 0.25rem;
+  
+  .ctools-toggle {
+    display: none;
+  }
+  
+  .ctools-collapsible-handle {
+    background-color: $color-green;
+    color: $color-white;
+    display: flex !important;
+    font-family: $font-mark;
+    font-size: 1.625rem;
+    
+    h2 {
+      font-size: 1.625rem;
+      margin: 0;
+      padding: 1.25rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    & > * {
+      flex: 1 0 auto;
+    }
+    
+    &:after {
+      content: "✕";
+      padding: 1.25rem;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1;
+      width: 2rem;
+      box-sizing: content-box;
+    }
+  }
+  
+  &.ctools-collapsed .ctools-collapsible-handle::after {
+    content: "▼";
+  }
+  
+}
+
+.article .ctools-collapsible-container {
+  .ctools-collapsible-handle {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

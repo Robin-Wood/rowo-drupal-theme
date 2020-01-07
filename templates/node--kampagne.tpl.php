@@ -71,6 +71,17 @@
     </div>
   </div>
   
+  <?php
+    if (!empty($content['field_call_to_action'])):
+      print render($content['field_call_to_action']);
+    else :
+      $block_cta = block_get_blocks_by_region('cta');
+      if (!empty($block_cta)):
+        print render($block_cta);
+      endif;
+    endif;
+  ?>
+  
   <?php if (!empty($content['field_akkordeon'])): ?>
     <?php print render($content['field_akkordeon']); ?>
   <?php endif; ?>
@@ -95,6 +106,18 @@
           <?php print render($content['field_datei_upload']); ?>
         </footer>
       <?php endif; ?>
+    </div>
+  </div>
+      
+  <?php
+    $block_related = block_get_blocks_by_region('related');
+    if (!empty($block_related)):
+      print render($block_related);
+    endif;
+  ?>
+  
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
 
       <div class="share hidden-print">
         <?php $block = module_invoke('block', 'block_view', '2');?>
@@ -104,24 +127,6 @@
     </div>
   </div>
 </article>
-
-<?php
-  $block_related = block_get_blocks_by_region('related');
-  if (!empty($block_related)):
-    print render($block_related);
-  endif;
-?>
-
-<?php
-  if (!empty($content['field_call_to_action'])):
-    print render($content['field_call_to_action']);
-  else :
-    $block_cta = block_get_blocks_by_region('cta');
-    if (!empty($block_cta)):
-      print render($block_cta);
-    endif;
-  endif;
-?>
 
 <div class="back hidden-print">
   <a href="/wir-machen-druck"
