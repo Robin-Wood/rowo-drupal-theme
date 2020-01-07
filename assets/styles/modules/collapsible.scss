@@ -14,6 +14,7 @@
     font-size: 1.625rem;
     
     h2 {
+      flex: 1 1 auto;
       font-size: 1.625rem;
       margin: 0;
       padding: 1.25rem;
@@ -21,12 +22,9 @@
       text-transform: uppercase;
     }
     
-    & > * {
-      flex: 1 0 auto;
-    }
-    
     &:after {
       content: "✕";
+      flex: 0 0  auto;
       padding: 1.25rem;
       text-align: center;
       font-size: 2rem;
@@ -46,5 +44,10 @@
   .ctools-collapsible-handle {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+    
+    @include small {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }

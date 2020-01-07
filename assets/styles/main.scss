@@ -266,8 +266,7 @@
 .article__pre-teaser-container {
     background-color: $color-green;
     color: #fff;
-    padding-bottom: 3rem;
-    padding-top: 3rem
+    padding: 3rem 1.5rem;
 }
 
 @media screen and (min-width:768px) {
@@ -440,7 +439,7 @@ h2.block-title {
     font-weight: 500;
     line-height: 1.45;
     padding-left: 2.5rem;
-    padding-right: 2.5rem
+    padding-right: 2.5rem;
     
     p {
       overflow: hidden;
