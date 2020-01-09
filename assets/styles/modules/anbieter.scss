@@ -128,5 +128,9 @@
   .anbieter__info a {
     color: $color-green;
     hyphens: auto;
+    
+    strong {
+      font-weight: 800;
+    }
   }
 }
