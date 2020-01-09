@@ -622,9 +622,14 @@ h2.block-title {
 
 .article__logos {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   
   .article__logo {
-    margin: 0 2rem;
+    margin: 2rem 4rem;
+    flex: 1 1 25rem;
+    max-width: 25rem;
   }
   
   .article__logo:first-child {
