@@ -620,6 +620,22 @@ h2.block-title {
     }
 }
 
+.article__logos {
+  display: flex;
+  
+  .article__logo {
+    margin: 0 2rem;
+  }
+  
+  .article__logo:first-child {
+    flex: 1;
+  }
+}
+
+
+
+
+
 .author {
     background-color: #f2f2f2;
     padding: 2rem 0
