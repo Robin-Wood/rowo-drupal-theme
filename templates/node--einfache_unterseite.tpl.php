@@ -16,6 +16,11 @@
       <?php endif; ?>
     </div>
   </div>
+  
+  <?php if (!empty($content['field_akkordeon'])): ?>
+    <?php print render($content['field_akkordeon']); ?>
+  <?php endif; ?>
+  
 </article>
 
 <?php
