@@ -242,7 +242,7 @@
     margin-bottom: 0;
     margin-top: 0;
     max-width: 90%;
-    min-width: 60%;
+    min-width: 79%;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -266,12 +266,16 @@
 .article__pre-teaser-container {
     background-color: $color-green;
     color: #fff;
-    padding-bottom: 3rem;
-    padding-top: 3rem
+    padding: 3rem 1.5rem;
+}
+
+.article__pre-teaser-container:first-child {
+    margin-top: -1.5rem;
 }
 
 @media screen and (min-width:768px) {
-    .article__pre-teaser-container {
+    .article__pre-teaser-container,
+    .article__post-teaser-container {
         margin-left: -1.5rem;
         margin-right: -1.5rem
     }
@@ -284,7 +288,42 @@
     line-height: 1;
     margin-bottom: 0;
     margin-top: 0;
-    text-align: center
+    text-align: center;
+}
+
+.article__pre-teaser-title2 {
+    align-items: center;
+    color: $color-black;
+    display: flex;
+    font-family: $font-mark;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    img {
+      display: inline;
+      margin-left: 5rem;
+    }
+}
+
+.article__post-teaser-container {
+  background-color: $color-grey;
+  color: $color-black;
+  font-family: $font-mark;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  
+  .article__post-teaser-title {
+    font-weight: normal;
+    line-height: 0.4;
+    text-align: center;
+  }
+  
+  .article__post-teaser-text {
+    font-size: 2.7rem;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width:768px) {
@@ -346,7 +385,8 @@
     margin-top: 1rem
 }
 
-.article__subheadline {
+.article__subheadline,
+h2.block-title {
     font-size: 2.375rem;
     font-family: $font-tisa;
     font-weight: 700;
@@ -358,21 +398,18 @@
 }
 
 @media screen and (min-width:768px) {
-    .article__subheadline {
-        font-size: 2.75rem
+    .article__subheadline,
+    h2.block-title {
+        font-size: 2.75rem;
+        padding-left: 0;
+        padding-right: 0
     }
 }
 
 @media screen and (min-width:992px) {
-    .article__subheadline {
+    .article__subheadline,
+    h2.block-title {
         font-size: 3.25rem
-    }
-}
-
-@media screen and (min-width:768px) {
-    .article__subheadline {
-        padding-left: 0;
-        padding-right: 0
     }
 }
 
@@ -406,7 +443,7 @@
     font-weight: 500;
     line-height: 1.45;
     padding-left: 2.5rem;
-    padding-right: 2.5rem
+    padding-right: 2.5rem;
     
     p {
       overflow: hidden;
@@ -532,8 +569,7 @@
     margin-top: 1.5rem
 }
 
-.article__block-headline,
-h2.block-title {
+.article__block-headline {
     font-size: 2rem;
     font-family: $font-mark;
     font-weight: 700;
@@ -542,10 +578,6 @@ h2.block-title {
     margin-bottom: 0;
     margin-top: 2.5rem;
     text-transform: uppercase
-}
-
-h2.block-title {
-  margin-bottom: 1.5rem;
 }
 
 .article__block-headline+p {
@@ -587,6 +619,23 @@ h2.block-title {
         margin-right: 0
     }
 }
+
+.article__logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  .article__logo {
+    margin: 2rem 4rem;
+    flex: 1 1 20rem;
+    max-width: 25rem;
+  }
+}
+
+
+
+
 
 .author {
     background-color: #f2f2f2;
@@ -1693,7 +1742,7 @@ h2.block-title {
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
-    background-color: #d9d9d9;
+    background-color: $color-grey;
     color: #fff;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
@@ -1852,7 +1901,7 @@ h2.block-title {
 }
 
 .teaser-date {
-    border-bottom: 3px dotted #d9d9d9;
+    border-bottom: 3px dotted $color-grey;
     margin-bottom: 1.5rem
 }
 
@@ -2057,20 +2106,20 @@ h2.block-title {
 }
 
 .teaser-highlight--is-grey {
-    background-color: #d9d9d9;
+    background-color: $color-grey;
     color: $color-black
 }
 
 .teaser-highlight--is-grey>.button:focus,
 .teaser-highlight--is-grey>.button:hover {
     background-color: $color-black;
-    color: #d9d9d9
+    color: $color-grey
 }
 
 .teaser-highlight--is-grey .teaser-highlight__image-container:after {
     width: 0;
     height: 0;
-    border-bottom: 1.5rem solid #d9d9d9;
+    border-bottom: 1.5rem solid $color-grey;
     border-left: 1.5rem solid transparent;
     border-right: 1.5rem solid transparent
 }

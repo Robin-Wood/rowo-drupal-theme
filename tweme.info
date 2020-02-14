@@ -3,6 +3,9 @@ description = Ultra lightweight Bootstrap theme for Drupal.
 core = 7.x
 base theme = bootstrap
 
+scripts[] = dist/scripts/d3.min.js
+scripts[] = dist/scripts/charts.js
+
 stylesheets[all][] = dist/styles/main.css
 stylesheets[all][] = dist/styles/forms.css
 stylesheets[all][] = dist/style.css
