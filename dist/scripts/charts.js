@@ -66,6 +66,7 @@ function pieChart(v) {
       .style("stroke-width", "1px")
       .style("opacity", 0.9);
   }
+
   var mousemove = function(d) {
     let str = d.data.key.split('');
     str = str[0].toUpperCase() + str.slice(1).join('');
@@ -95,10 +96,10 @@ function pieChart(v) {
     })
   //.attr("stroke", "#bfbfbf")
     .style("stroke-width", "0")
-    .style("opacity", 1)
-    .on("mouseover", mouseover)
-    .on("mousemove", mousemove)
-    .on("mouseleave", mouseleave);
+    .style("opacity", 1);
+//    .on("mouseover", mouseover)
+//    .on("mousemove", mousemove)
+//    .on("mouseleave", mouseleave);
 
 }
 

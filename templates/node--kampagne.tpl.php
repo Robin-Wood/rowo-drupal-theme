@@ -128,6 +128,10 @@
   </div>
 </article>
 
+<?php if (!empty($content['field_kooperation'])): ?>
+  <?php print render($content['field_kooperation']); ?>
+<?php endif; ?>
+
 <div class="back hidden-print">
   <a href="/wir-machen-druck"
      class="back__title">◂ Zu "Wir machen Druck"</a>
