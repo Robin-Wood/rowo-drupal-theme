@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-  <?php else; ?>
+  <?php else: ?>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <h1 class="article__subheadline">
