@@ -1,20 +1,39 @@
 <article class="article article--page">
+
+  <?php if (!empty($content['field_bild'])): ?>
+    <figure class="article__teaser-image-container">
+      <?php print render($content['field_bild']); ?>
+    </figure>
+  <?php endif; ?>
+
+  <?php if (!empty($content['field_teaser_text'])): ?>
+    <div class="article__pre-teaser-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <h1 class="article__subheadline">
+            <?php print $title; ?>
+          </h1>
+          <?php print render($content['field_teaser_text']); ?>
+        </div>
+      </div>
+    </div>
+  <?php else; ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h1 class="article__subheadline">
+          <?php print $title; ?>
+        </h1>
+      </div>
+    </div>
+  <?php endif; ?>
+      
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-
-      <h1 class="article__subheadline">
-        <?php print $title; ?>
-      </h1>
-      
-      <?php if (!empty($content['field_teaser_text'])): ?>
-        <?php print render($content['field_teaser_text']); ?>
-      <?php endif; ?>
-      
-
       <div class="article__text">
         <?php print render($content['field_text_einfache_seite']); ?>
       </div>
-
+    </div>
+  </div>
   
   <?php $block_text = block_get_blocks_by_region('text'); ?>
   <?php if (!empty($block_text)): ?>
