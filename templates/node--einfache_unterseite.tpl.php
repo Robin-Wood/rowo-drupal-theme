@@ -7,7 +7,7 @@
   <?php endif; ?>
 
   <?php if (!empty($content['field_teaser_text'])): ?>
-    <div class="article__pre-teaser-container">
+    <div class="article__post-teaser-container">
       <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           <h1 class="article__subheadline">
