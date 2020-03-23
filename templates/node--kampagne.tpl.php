@@ -71,6 +71,10 @@
     </div>
   </div>
   
+  <?php if (!empty($content['field_akkordeon'])): ?>
+    <?php print render($content['field_akkordeon']); ?>
+  <?php endif; ?>
+  
   <?php
     if (!empty($content['field_call_to_action'])):
       print render($content['field_call_to_action']);
@@ -81,10 +85,6 @@
       endif;
     endif;
   ?>
-  
-  <?php if (!empty($content['field_akkordeon'])): ?>
-    <?php print render($content['field_akkordeon']); ?>
-  <?php endif; ?>
   
   <div class="row">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
