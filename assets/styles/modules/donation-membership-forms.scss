@@ -4,7 +4,7 @@
  */
 .block-entityform-block.donation-membership-forms,
 #commerce-checkout-form-checkout {
-  padding: 2rem 0;
+  //padding: 2rem 0;
 
   /**
    * Collapsible section styles using Chaos tools collapsible.
@@ -81,6 +81,7 @@
     &#edit-field-line-item-donation-und,
     &#edit-field-regular-donation-line-item-und,
     &#edit-field-line-item-donation-und-form-line-item-details,
+    &#edit-field-line-item-donation-und-form-line-item-details--2,
     &#edit-field-regular-donation-line-item-und-form-line-item-details,
     &#edit-field-act-membership-line-item-und-form-line-item-details,
     &#edit-field-sup-membership-line-item-und-form-line-item-details {
@@ -212,7 +213,8 @@
   .field-name-field-donation-is-recurring {
     border-top: 3px dotted grey;
 
-    label[for="edit-field-donation-is-recurring-und"] {
+    label[for="edit-field-donation-is-recurring-und"],
+    label[for="edit-field-donation-is-recurring-und--2"]{
       color: $color-green;
       text-transform: uppercase;
       font-weight: bold;
