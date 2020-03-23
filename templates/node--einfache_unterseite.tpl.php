@@ -5,17 +5,21 @@
       <h1 class="article__subheadline">
         <?php print $title; ?>
       </h1>
+      
+      <?php if (!empty($content['field_teaser_text'])): ?>
+        <?php print render($content['field_teaser_text']); ?>
+      <?php endif; ?>
+      
 
       <div class="article__text">
         <?php print render($content['field_text_einfache_seite']); ?>
       </div>
-      
-      <?php $block_text = block_get_blocks_by_region('text'); ?>
-      <?php if (!empty($block_text)): ?>
-        <?php print render($block_text); ?>
-      <?php endif; ?>
-    </div>
-  </div>
+
+  
+  <?php $block_text = block_get_blocks_by_region('text'); ?>
+  <?php if (!empty($block_text)): ?>
+    <?php print render($block_text); ?>
+  <?php endif; ?>
   
   <?php if (!empty($content['field_akkordeon'])): ?>
     <?php print render($content['field_akkordeon']); ?>
