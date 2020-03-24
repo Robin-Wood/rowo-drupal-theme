@@ -52,7 +52,7 @@ $classes .= ' donation-membership-forms';
 
 ctools_add_js('collapsible-div');
 ctools_add_css('collapsible-div');
-$classes .= ' ctools-collapsible-container';
+$classes .= ' ctools-collapsible-container ctools-collapsed';
 ?>
 
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
