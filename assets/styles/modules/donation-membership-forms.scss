@@ -8,50 +8,6 @@
   font-family: $font-mark;
 
   /**
-   * Collapsible section styles using Chaos tools collapsible.
-   * @see block--entityform-block--X.tpl.php templates.
-   */
-  &.ctools-collapsible-container {
-    .ctools-toggle {
-      display: none;
-    }
-
-    .ctools-collapsible-handle {
-      background-color: $color-green;
-      display: flex;
-
-      @media screen and (min-width:768px) {
-        margin-left: -1.5rem;
-        margin-right: -1.5rem
-      }
-
-      > * {
-        flex: 1 0 auto;
-      }
-
-      &::after {
-        content: '✕';
-        padding: 1rem;
-        color: $color-white;
-        background-color: $color-green;
-        text-align: center;
-        font-size: 2rem;
-        line-height: 1;
-        width: 2rem;
-        box-sizing: content-box;
-      }
-    }
-
-    &.ctools-collapsed {
-      .ctools-collapsible-handle {
-        &::after {
-          content: '▼';
-        }
-      }
-    }
-  }
-
-  /**
    * General form layout styles.
    */
   .block-title {

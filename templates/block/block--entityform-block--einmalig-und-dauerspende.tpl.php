@@ -67,7 +67,7 @@ $classes .= ' ctools-collapsible-container';
 
   <?php print render($title_suffix); ?>
 
-  <div class="ctools-collapsible-content">
+  <div class="ctools-collapsible-content article__text">
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         <?php print $content ?>
