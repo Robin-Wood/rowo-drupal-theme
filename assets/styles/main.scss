@@ -436,7 +436,8 @@ h2.block-title {
     display: inline
 }
 
-.article__text {
+.article__text,
+.view-header {
     font-size: 1.5rem;
     font-family: $font-tisa;
     font-weight: 500;
