@@ -9,7 +9,7 @@
     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
       <div class="article__text">
         <h1 class="article__subheadline">
-          <?php print render($title);?>
+          ROBIN WOOD <?php print render($title);?>
         </h1>
 
         <?php print render($content['field_beschreibung_der_gruppe']); ?>
