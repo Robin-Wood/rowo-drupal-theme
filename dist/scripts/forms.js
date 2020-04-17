@@ -10,6 +10,6 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {  
   var $checkoutForm = $('#commerce-checkout-form-checkout');
-  $checkoutForm.addClass( "col-xs-12 col-sm-8 col-sm-offset-2");
+  $checkoutForm.addClass( "col-xs-12 col-sm-8 col-sm-offset-2 article__text");
   $checkoutForm.wrap( "<div class='row'></div>" );
 });
