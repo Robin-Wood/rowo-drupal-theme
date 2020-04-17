@@ -4,4 +4,8 @@ jQuery(document).ready(function($) {
   $('html, body').animate({
       scrollTop:$collapsibleContainerWithFormError.offset().top
     },'slow');
+  
+  var $checkoutForm = $('#commerce-checkout-form-checkout');
+  $checkoutForm.addClass( "col-xs-12 col-sm-8 col-sm-offset-2");
+  $checkoutForm.wrap( "<div class='row'></div>" );
 });
