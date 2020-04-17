@@ -5,6 +5,7 @@ base theme = bootstrap
 
 scripts[] = dist/scripts/d3.min.js
 scripts[] = dist/scripts/charts.js
+scripts[] = dist/scripts/forms.js
 
 stylesheets[all][] = dist/styles/main.css
 stylesheets[all][] = dist/styles/forms.css
