@@ -74,8 +74,9 @@
   
   .button {
     background-color: $color-white;
+    border-color: $color-white;
     color: $color-black;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     
     &:hover,
     &:focus {
