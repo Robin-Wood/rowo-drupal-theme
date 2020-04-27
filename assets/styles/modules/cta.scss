@@ -76,5 +76,11 @@
     background-color: $color-white;
     color: $color-black;
     margin-top: 1.5rem;
+    
+    &:hover,
+    &:focus {
+      background-color: $color-black;
+      color: $color-white;
+    }
   }
 }

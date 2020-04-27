@@ -6,10 +6,8 @@
 
       <h2 class="article__teaser-image-title">
         <?php print $fields["title"]->content;?>
+        <button class="button button--window button--is-centered">Mehr erfahren</button>
       </h2>
-      
-      <button class="button button--window button--is-centered">Mehr erfahren</button>
-      
     </figure>
   </a>
 </div>
