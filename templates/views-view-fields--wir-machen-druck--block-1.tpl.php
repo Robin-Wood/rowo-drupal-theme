@@ -1,3 +1,4 @@
+<div class="kampagne-teaser">
   <a href="<?php print $fields['path']->content; ?>"
      class="outer-link">
     <figure class="article__teaser-image-container">
@@ -11,3 +12,4 @@
       
     </figure>
   </a>
+</div>
