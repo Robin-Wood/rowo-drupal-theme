@@ -49,15 +49,15 @@
 
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <a href="<?php print $fields['path']->content; ?>"
+  <a href=""
      class="outer-link">
     <header class="campaign__header">
       <div class="campaign__image-container">
-        <?php print render($content["field_teaser_bild_kampagne"];?>
+        <?php print render($content["field_teaser_bild_kampagne"]);?>
       </div>
 
       <h2 class="campaign__title">
-        <?php print render($content["title"];?>
+        <?php print render($content["title"]);?>
       </h2>
     </header>
 </a>  
