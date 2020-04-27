@@ -1,14 +1,13 @@
-<article class="campaign">
   <a href="<?php print $fields['path']->content; ?>"
      class="outer-link">
-    <header class="campaign__header">
-      <div class="campaign__image-container">
-        <?php print $fields["field_bild"]->content;?>
-      </div>
+    <figure class="article__teaser-image-container">
+      <?php print $fields["field_bild"]->content;?>
 
-      <h2 class="campaign__title">
+      <h2 class="article__teaser-image-title">
         <?php print $fields["title"]->content;?>
       </h2>
-    </header>
+      
+      <button class="button button--window button--is-centered">Mehr erfahren</button>
+      
+    </figure>
   </a>
-</article>
