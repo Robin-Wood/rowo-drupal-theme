@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/gustavpursche/robin-wood-drupal-theme#readme",
   "dependencies": {
-    "jquery": "^3.1.1",
+    "jquery": "^3.5.0",
     "sanitize.css": "^4.1.0",
     "slick-carousel": "^1.6.0"
   },
