@@ -334,16 +334,24 @@
     .form-item {
       &:not(.form-type-radio):not(.form-type-checkbox) {
         display: flex;
+        flex-wrap: wrap;
         margin-left: 0;
         margin-right: 0;
+        
+        @include xsmall {
+          flex-wrap: nowrap;
+        }
 
         > * {
           flex: 1 1 50%;
         }
 
         > label {
-          text-align: right;
+          text-align: left;
           margin-right: 1rem;
+          @include xsmall {
+            text-align: right;
+          }
         }
 
         .form-text,
