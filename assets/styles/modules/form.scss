@@ -62,15 +62,15 @@
 
 .form-item {
   margin-bottom:20px;
-}
 
-.form-item.form-type-radio {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.form-item.form-type-radio > label {
-  margin-right: 1rem;
+  .form-type-radio {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+  }
+  
+  > label {
+    margin-right: 1rem;
+  }
 }
 
 input.form-radio,
