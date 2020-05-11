@@ -217,6 +217,7 @@
       }
       .form-radios {
         display: flex;
+        flex-wrap: wrap;
         position: relative;
 
         > * {
@@ -249,6 +250,7 @@
             font-size: 3rem;
             position: relative;
             display: block;
+            white-space: nowrap;
             z-index: 1;
 
             input.form-radio {
